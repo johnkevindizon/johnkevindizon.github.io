@@ -297,10 +297,16 @@ body{
         max-width: 50%;
         height: auto;
     }
-    .wrapper p {    
+    .desc {
+        margin: 0;
+        padding: 0;
+        width: 50%;
+    }
+    .desc p {    
         text-align: left;
         padding: 0 0 18px;
-        font-size: 18px;
+        font-size: 17px;
+        letter-spacing: 1px;
     }
     .index2-container {
         margin: auto;
