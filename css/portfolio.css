@@ -142,6 +142,8 @@ body {
     font-size: 20px;
 }
 .uc-wrapper {
+    width:  auto;
+    height: auto;
     margin: 0;
     padding: 10px;
     display: flex;
