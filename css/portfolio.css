@@ -130,7 +130,7 @@ body {
 
 .section1-container {
     margin: 0;
-    height: 100vh;
+    height: auto;
     padding: 100px 10px;
 }
 .section1-container h3 {
@@ -142,8 +142,6 @@ body {
     font-size: 20px;
 }
 .uc-wrapper {
-    width:  auto;
-    height: auto;
     margin: 0;
     padding: 10px;
     display: flex;
