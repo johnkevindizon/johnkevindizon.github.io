@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{   
+    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(2, 4, 29); */
+}
+/*TOPNAV*/
+.topnav-container {
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 1400px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+.logo img {
+    width: 100px;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+}
+.links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.links li {
+    list-style: none;
+    border-radius: 20px;
+}
+.links li a {
+    text-decoration: none;
+    color: white;
+    padding: .9rem 1.50rem;
+    display: block;
+
+}
+#activee1 {
+    border-radius: 20px;
+    color: rgb(2, 247, 255);
+}
+#activee2 {
+    border-bottom: 4px solid rgb(2, 247, 255);
+}
+.links li:hover {
+    color: rgb(2, 247, 255);
+    border-bottom: 4px solid rgb(2, 247, 255);
+    transition-duration: .3s;
+}
+.toggle-button {
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    z-index: 1000;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.nav-sidebar {
+    display: none;  
+}
+
+/*MEDIA QUERIES FOR TOPNAV*/
+
+@media (max-width: 900px) {
+    .toggle-button {
+        display: flex;
+    }
+    .links {
+        display: none;
+    }
+    .nav-sidebar {
+        display: flex;
+        position: fixed;
+        margin: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 0px;
+        height: calc(100vh);
+        padding: 0 20px;
+        transition: all .3s ease-in-out;
+        box-shadow:  4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        backdrop-filter: blur(1px);
+    }
+    .nav-sidebar ul {
+        visibility: hidden;
+        padding: 0;
+    }
+    .nav-sidebar ul li a {
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        transition: all .3s ease-in-out;
+        text-decoration: none;
+        text-shadow: 0 3px 3px rgb(0, 0, 0),0 3px 3px rgb(0, 0, 0);
+    }
+    .nav-sidebar ul li {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+        border-radius: 20px;
+    }
+    .nav-sidebar li:hover {
+        color: rgb(2, 247, 255);
+        border-bottom: 4px solid rgb(2, 247, 255);
+        transition: all .3s;
+    }
+}
+
+
+/*MAIN-CONTENT*/
+/*FOOTER*/
+#form-container {
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+#contact_info {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    padding: 20px;
+}
+#message_us {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: auto;
+    height: 10%;
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    box-shadow: -1px 5px 20px  rgb(2, 247, 255),-1px -15px 40px -15px  rgb(2, 247, 255);
+    color: rgb(2, 247, 255);
+    transition-duration: 0.3s;
+  }
+ 
