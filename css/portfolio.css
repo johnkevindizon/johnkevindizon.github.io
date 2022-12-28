@@ -130,7 +130,6 @@ body {
 
 .section1-container {
     margin: 0;
-    height: auto;
     padding: 100px 10px;
 }
 .section1-container h3 {
@@ -149,7 +148,7 @@ body {
 }
 .uc-wrapper img {
     width: 100px;
-    height: auto;
+    height: 100px;
 }
 
 @media only screen and  (min-width: 1000px) {
