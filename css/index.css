@@ -83,6 +83,7 @@ body{
 }
 
 /*MEDIA QUERIES FOR TOPNAV*/
+/* 
 @media (max-width: 900px) {
     .toggle-button {
         display: flex;
@@ -92,23 +93,23 @@ body{
     }
     .nav-sidebar {
         display: flex;
-        position: fixed;
+        position:fixed;
         margin: 0;
-        top: 0;
+        top: 0; 
         right: 0;
         bottom: 0;
         width: 0px;
         height: calc(100vh);
-        padding: 0 20px;
+        padding: 0 10px;
         transition: all .3s ease-in-out;
         box-shadow:  4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        backdrop-filter: blur(7px);
+        backdrop-filter: blur(5px);
     }
     .nav-sidebar ul {
         visibility: hidden;
-        padding: 0;
-    }
-    .nav-sidebar ul li a {
+        /* padding: 0; */
+    /* } */
+    /* .nav-sidebar ul li a {
         color: rgb(255, 255, 255);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         transition: all .3s ease-in-out;
@@ -126,7 +127,57 @@ body{
         border-bottom: 4px solid rgb(2, 247, 255);
         transition: all .3s;
     }
+} */ 
+
+@media (max-width: 900px) {
+    .toggle-button {
+        display: flex;
+    }
+    .links {
+        display: none;
+    }
+    .nav-sidebar {
+        justify-content:center ;
+        display: flex;
+        position: fixed;
+        margin: 0;
+        top: 0; 
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 100vh;
+        padding: 0 10px;
+        transition: width 0.3s ease-in-out;
+        box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        backdrop-filter: blur(5px);
+    }
+    .nav-sidebar ul {
+        visibility: hidden;
+    }
+    .nav-sidebar ul li a {
+        color: rgb(255, 255, 255);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        transition: all 0.3s ease-in-out;
+        text-decoration: none;
+        text-shadow: 0 3px 3px rgb(0, 0, 0), 0 3px 3px rgb(0, 0, 0);
+    }
+    .nav-sidebar ul li {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+        border-radius: 20px;
+    }
+    .nav-sidebar li:hover {
+        color: rgb(2, 247, 255);
+        border-bottom: 4px solid rgb(2, 247, 255);
+        transition: all 0.3s;
+    }
+    .nav-sidebar.open {
+        width: 200px;
+    }
 }
+
+
 
 /*MAIN-CONTENT*/
 
