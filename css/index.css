@@ -83,7 +83,6 @@ body{
 }
 
 /*MEDIA QUERIES FOR TOPNAV*/
-
 @media (max-width: 900px) {
     .toggle-button {
         display: flex;
