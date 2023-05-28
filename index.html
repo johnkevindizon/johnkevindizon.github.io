@@ -4,6 +4,11 @@
     <title>John Kevin Dizon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css\index.css"> 
 </head>
 <body>
@@ -12,7 +17,7 @@
 
 <div class="topnav-container">
     <nav class="navbar">
-        <a class="logo" href="index.html"><img src="Images\logo.png" alt="logo"></a>
+        <a class="logo" href="index.html"><img src="Images\New Logo_f2_trnsprnt-02-white-01.png" alt="logo"></a>
         <a href="#" class="toggle-button" onclick="toggleNav()">
             <span class="bar"></span>
             <span class="bar"></span>   
@@ -20,21 +25,44 @@
         </a>
         <div class="links">
             <ul>
-                <li id="activee2"><a href="index.html" id="activee1">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li id="activee2"><a id="activee1" href="contact.html">HOME</a></li>
+                <li class="dropdowns">
+                    <a href="javascript:void(0)" class="dropbtn">ABOUT</a>
+                    <div class="dropdown-content">
+                        <a href="tablature.html">SRBM</a>
+                        <div class="dropdowns relative">
+                            <a href="javascript:void(0)" class="dropbtn">GUITAR</a>
+                            <div class="dropdown-content nested-dropdown">
+                                <a href="tablature.html">TABLATURE</a>
+                                <a href="tablature.html">COVERS</a>
+                            </div>
+                        </div>
+                        <a href="tablature.html">TECHMEND HAVEN</a>
+                    </div>
+                </li>
                 <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="guitar.html">GUITAR</a></li>
-                <li><a href="tablature.html">TABLATURE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
     </nav>
     <aside class="nav-sidebar">
         <ul>
-            <li style="padding-top: 70px;" id="activee2"><a href="index.html" id="activee1">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="guitar.html">GUITAR</a></li>
-            <li><a href="tablature.html">TABLATURE</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i>HOME</a></li>
+            <li><a href="#" onclick="toggleABOUT()"><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i>ABOUT<i class="fa-solid fa-caret-down" style="color: #ffffff;"></i></a></li>
+            <div class="about-sidebar">
+               <li><a href="#" onclick="toggleSRBM()">SRBM<i class="fa-solid fa-caret-down" style="color: #ffffff;"></i></a></li>
+                <div class="srbm-sidebar">
+                    <li><a href="#">PRAISE AND WORSHIP</a></li>
+                </div>
+                <li><a href="#" onclick="toggleGUITAR()">GUITAR<i class="fa-solid fa-caret-down" style="color: #ffffff;"></i></a></li>
+                <div class="guitar-sidebar">
+                    <li><a href="guitar.html">TABLATURE</a></li>
+                    <li><a href="guitar.html">COVERS</a></li>
+                </div>
+                <li><a href="#">TECHMEND HAVEN</a></li>
+            </div>
+            <li><a href="guitar.html"><i class="fa-solid fa-folder-open" style="color: #ffffff;"></i>PORTFOLIO</a></li>
+            <li><a href="tablature.html"><i class="fa-solid fa-address-book" style="color: #ffffff;"></i>CONTACT</a></li>
         </ul>
     </aside>
 </div>
@@ -42,65 +70,45 @@
     <!--MAIN-CONTENT-->
 
 <div class="index1-container">
-    <div class="wrapper">    
-        <div class="index-header"><h3>biography</h3></div>
-        <div class="image-container"><img src="Images\darkfade.png" id="mypic"></div>
-        <div class="desc">
-            <p>
-            Hi there! I`m John Kevin Dizon. I`m a fingerstyle guitarist from  
-            Mabalacat City, Philippines. I started playing guitar way back
-            2016, I was in 9th grade when our Church pastor invited me to 
-            a Youth Camp in Mariveles Bataan. I was spiritually change there
-            when I met Jesus. He found me. I accepted Him as my Lord, God and  
-            Savior. When I was there, suddenly, it came to my mind that I want 
-            to learn the guitar which I actually learned by His grace and knowledge. 
-            So I used my given talent to serve Christ at a local Church at Atlu Bola, 
-            Mabalacat City. </p> 
-            <p>
-            The first song I`ve learned is Stay with me by Sam Smith because it`s 
-            just have 3 chords. Later on, I learned how to playing basic fingerstyle. 
-            The first song I`ve played fingerstyle is All of Me by John Legend. 
-            Then I started to arrange my own fingerstyle guitar. My very first arrangement is 
-            Torete by Moonstar 88. So I continue learning the guitar, from different styles
-            and techniques, all the way down to Music Theory. </p>    
-            <p>
-            Learning the guitar isn`t that easy, just like any other skills, it  
-            requires time, determination, dedication and the most import is your heart,
-            because no matter what you do, if your heart is not in what you are doing, 
-            it will be non-sense. Learning the guitar, or should I say loving the music 
-            through the guitar is such a priceless thing. By this, I was be able to  
-            share my given talent to others, especially to other youths in our church.
-            Above all I thank God, who saved me and making my life in tune.
-            </p>
-        </div>
+    <div class="index-header"><h3>biography</h3></div>
+    <div class="wrapper">
+    <div class="desc">
+        <p>Welcome to my personal website! I am John Kevin Dizon, a passionate 
+            fingerstyle guitarist hailing from the vibrant city of Mabalacat in the
+            beautiful Philippines. My musical journey began in 2016 during my 9th-grade 
+            year when a fortuitous invitation to a Youth Camp in Mariveles Bataan changed the 
+            course of my life. It was there that I encountered Jesus and experienced a profound 
+            spiritual transformation. Embracing Him as my Lord, God, and Savior, I felt a 
+            strong calling to explore the world of guitar, an instrument that seemed to 
+            resonate with my newfound faith.</p>
+        <p>My initial steps into the realm of music started with the humble 
+            three-chord composition of "Stay with Me" by Sam Smith. Eager to 
+            expand my repertoire, I delved into the captivating art of fingerstyle 
+            guitar playing, and it was with great excitement that I mastered my 
+            first fingerstyle rendition of John Legend's "All of Me." This sparked 
+            my creative spirit, leading me to arrange my own fingerstyle adaptations, 
+            with my very first endeavor being a heartfelt rendition of "Torete" by 
+            Moonstar 88. My journey continued as I delved into various styles, 
+            techniques, and even the intricate world of Music Theory.
+        </p>
+        <p>Learning the guitar proved to be an arduous yet immensely rewarding endeavor. 
+            Like any skill worth pursuing, it demanded time, unwavering determination, 
+            and unwavering dedication. However, above all else, the most crucial aspect 
+            was pouring my heart into every note I played. True passion is the driving force 
+            behind meaningful music, as without genuine love and devotion, our efforts would 
+            be in vain. This profound connection with the guitar and my deep appreciation for 
+            music allowed me to share my God-given talent with others, particularly the vibrant 
+            youth community within our local church.</p>
+        <p>Above all, I am immensely grateful to God for saving me and bringing harmony into 
+            my life. It is through Him that I have found purpose, joy, and an unyielding 
+            desire to continue honing my craft. Join me on this melodic journey as we celebrate 
+            the transformative power of music and embrace the beauty that unfolds when our 
+            lives resonate with the rhythms of our hearts.</p>
+    </div>
+    <!-- <div class="pic1"><div src="Images\darkfade.png"></div> -->
     </div>
 </div>
 
-    <!--TEAMMATES-->
-
-<div class="index2-container">
-    <div class="index-header"><h3>team</h3></div>
-    <div class="teammate-container">
-        <img src="Images\team.jpg" id="teammates">
-        <h1>teammate 1</h1>
-        <p>cameraman</p>
-        <div class="icons-wrapper">
-            <a href="#"><img src="Icons\facebook_white.png" alt="facebook.com"></a>
-            <a href="#"><img src="Icons\instagram_white.png" alt="instagram.com"></a>
-            <a href="#"><img src="Icons\twitter_white.png" alt="twitter.com"></a>
-        </div>
-    </div>    
-    <div class="teammate-container">
-        <img src="Images\team.jpg" id="teammates">
-        <h1>teammate 2</h1>
-        <p>transcriber</p>
-        <div class="icons-wrapper">
-            <a href="#"><img src="Icons\facebook_white.png" alt="facebook.com"></a>
-            <a href="#"><img src="Icons\instagram_white.png" alt="instagram.com"></a>
-            <a href="#"><img src="Icons\twitter_white.png" alt="twitter.com"></a>
-        </div>
-    </div> 
-</div>
 
     <!--FOOTER-->
     
