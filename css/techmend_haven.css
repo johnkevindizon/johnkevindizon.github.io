@@ -208,41 +208,27 @@ body {
     margin: auto;
     padding: 40px 80px 60px;
 }
-.index-header{
-    display: block;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    letter-spacing: 10px;   
-    text-align: center;
-    font-size: 30px;
-    text-transform: uppercase;
-    padding: 40px 0 40px;
+.techmend_logo {    
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
 }
-.desc {
-    display: block;
-    padding: 15px;
-}
-.desc p {
-    width: auto ;
-    text-align: center;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    text-align: justify;
-    padding: 0 0 18px;
-    letter-spacing: 1px;
-}
-.pic1 {
+.index1-container h3 {
     display: flex;
-    width: auto;
-    height: 100%;
-    padding: 15px;
-    margin-right: 50px;
+    color: #fff;
+    justify-content: center;
 }
-.pic1 img {
-    width: 400px;
-    border-radius: 20px;
+.index1-container h4 a{
+    display: flex;
+    color: #fff;
+    justify-content: center;
 }
+.index1-container h4 a:hover {
+    text-decoration: underline;
+    transition-duration: 0.3s;
+}
+
 
 
 /* FOOTER */    

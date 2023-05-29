@@ -206,45 +206,127 @@ body {
 
 .index1-container{
     margin: auto;
-    padding: 40px 80px 60px;
-}
-.index-header{
     display: block;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    letter-spacing: 10px;   
+    max-width: 100%;
+    margin: auto;
+}
+.index1-container h2{
+    color: #fff;
     text-align: center;
-    font-size: 30px;
-    text-transform: uppercase;
-    padding: 40px 0 40px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 40px
 }
-.desc {
-    display: block;
-    padding: 15px;
-}
-.desc p {
-    width: auto ;
+.index1-container h4{
+    color: #fff;
     text-align: center;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    text-align: justify;
-    padding: 0 0 18px;
-    letter-spacing: 1px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 20px;
 }
-.pic1 {
+.pnw_nav {
+    margin-top: 15px;
+    background: #101010;
+    width: 100%;
+    padding-left: 70px;
+}
+.pnw_nav ul {
     display: flex;
-    width: auto;
-    height: 100%;
+    margin: 0;
     padding: 15px;
-    margin-right: 50px;
+    width: 100%;
+    overflow: hidden;
 }
-.pic1 img {
-    width: 400px;
-    border-radius: 20px;
+.pnw_nav ul li {
+    list-style: none;
+
 }
-
-
+.pnw_nav ul li a{
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    padding: 15px;
+    
+}
+.pnw_nav ul li a:hover {
+    background: #1C1C1C;
+    color: rgb(2, 247, 255);
+    border-bottom: 3px solid rgb(2, 247, 255);
+    transition: .3s ease;
+}
+ .main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+ }
+ .main h3 {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+ }
+ .main label, select {
+    text-align: center;
+    font-family: 'Wix Madefor Display', sans-serif;
+ }
+ .main select {
+    align-self: center;
+    width: 15%;
+ }
+ .main ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .main ul li {
+    margin-bottom: 10px;
+  }
+  
+  .joyful {
+    color: green;
+  }
+  
+  .solemn {
+    color: blue;
+  }
+  
+  .christmas {
+    color: red;
+  }
+  
+  .filipino {
+    font-style: italic;
+  }
+  
+  .english {
+    font-weight: bold;
+  }
+  
+  .hillsong {
+    background-color: #f0f0f0;
+  }
+  
+  .musikatha {
+    background-color: #ffddc1;
+  }
+  
+  .donmoen {
+    background-color: #f8ffbf;
+  }
+  
+  .philwickham {
+    background-color: #c4f7a6;
+  }
+  
+  .planetshakers {
+    background-color: #a6f2f7;
+  }
+  
+  
 /* FOOTER */    
 
 .footer-container{
