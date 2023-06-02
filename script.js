@@ -14,6 +14,22 @@ $(document).ready(function(){
    });
 });
 
+$(document).ready(function(){
+  $('.sub-btn').click(function(){
+     $(this).next('.sub-menu').slideToggle();
+     $(this).find('.dropdown').toggleClass('rotate');
+  });
+
+  $('.menu-btn').click(function(){
+     $('.left-bar').addClass('active');
+     $('menu-btn').css("visibility", "hidden");
+  });
+  $('.close-btn').click(function(){
+     $('.left-bar').removeClass('active');
+     $('menu-btn').css("visibility", "visible");
+  });
+});
+
 
 function sortSongs() {
   var sortSelect = document.getElementById('sort-select');

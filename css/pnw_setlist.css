@@ -30,15 +30,16 @@ body {
     color: white;
 }
 .logo img {
-    
     width: 70px;
     height: auto;
     padding: 0;
     margin: 0 auto;
+    
+    
 }
 .logo img:hover {
     transform: rotate(360deg);
-    transition: .7s ease;
+    transition: .4s ease-in-out;
 }
 .links ul {
     margin: 0;
@@ -231,9 +232,10 @@ body {
 .pnw_nav ul {
     display: flex;
     margin: 0;
-    padding: 15px;
+    padding: 20px;
     width: 100%;
     overflow: hidden;
+    align-items: center;
 }
 .pnw_nav ul li {
     list-style: none;
@@ -244,7 +246,7 @@ body {
     cursor: pointer;
     font-size: 14px;
     font-family: 'Wix Madefor Display', sans-serif;
-    padding: 15px;
+    padding: 25px;
     
 }
 .pnw_nav ul li a:hover {
@@ -255,78 +257,78 @@ body {
 }
  .main{
     display: flex;
-    flex-direction: column;
-    margin-top: 20px;
     padding-left: 40px;
-    padding-right: 40px;
+    padding-right: 10px;
     background: #fff;
     width: 100%;
     height: 100vh;
  }
- .main h3 {
+ #sort-by {
+    color: #fff;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 14px;
+    padding-right: 15px;
+    padding-left: 15px;
+ }
+ #sort-select {
+    padding: 3px;
+    margin: 0;
+    align-self: center;
+    border-radius: 15px;
+}
+#sort-select option{
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+.main select {
+    align-self: center;
+    width: 15%;
+}
+.main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main ul li {
+    margin-bottom: 10px;
+}
+#song-list {
+    padding-top: 10px;
+    /* display: block; */
+    background: rgba(255, 255, 255, .1);
+    /* backdrop-filter: blur(5px); */
+    width: 370px;
+    height: 100vh;
+    position: relative;
+    /* top: 0; */
+    /* right: -100%; */
+    overflow-y: auto;
+    transition: .6s ease;
+}
+#song-list h3 {
     font-family: 'Wix Madefor Display', sans-serif;
     font-size: 20px;
     text-align: center;
     padding: 15px;
- }
- .main label, select {
-    text-align: center;
+    width: 100px;
+}
+#song-list li a{
+    color: #000;
     font-family: 'Wix Madefor Display', sans-serif;
- }
- .main select {
-    align-self: center;
-    width: 15%;
- }
- .main ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .main ul li {
-    margin-bottom: 10px;
-  }
-  
-  .joyful {
-    color: green;
-  }
-  
-  .solemn {
-    color: blue;
-  }
-  
-  .christmas {
-    color: red;
-  }
-  
-  .filipino {
-    font-style: italic;
-  }
-  
-  .english {
-    font-weight: bold;
-  }
-  
-  .hillsong {
-    background-color: #f0f0f0;
-  }
-  
-  .musikatha {
-    background-color: #ffddc1;
-  }
-  
-  .donmoen {
-    background-color: #f8ffbf;
-  }
-  
-  .philwickham {
-    background-color: #c4f7a6;
-  }
-  
-  .planetshakers {
-    background-color: #a6f2f7;
-  }
-  
-  
+    font-size: 14px;
+}
+#song-list li a:hover{
+    color: rgb(2, 247, 255);
+    transition: .2s ease;
+    background: #101010;
+    padding: 5px;
+    border-radius: 5px;
+}
+#iframee {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 /* FOOTER */    
 
 .footer-container{
