@@ -146,7 +146,7 @@ body {
         margin-top: 80px;
     }
     .side-bar .menu .item{
-        position: relative;
+        position: relative; 
         cursor: pointer;
     }
     .side-bar .menu .item a{
