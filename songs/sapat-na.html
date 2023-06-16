@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Sapat Na at Higit Pa</h1>
+  <h2>Musikatha</h2>
+  <p>Select key:</p>
+  <pre data-key="E"> 
+    Intro:   
+    E   A   E   A 
+    Verse:
+              E
+    'Di mangangamba sa kawalan
+              C#m
+    Pagpapala mo'y laging laan
+              A         G#m
+    'Di matatakot sa panganib
+              F#m                  A B
+    'Pagkat naririyan ka palagi
+                E 	
+    'Di matitinag sa pagsubok
+          C#m
+    Ang pagsama mo'y tiyak at lubos
+              A             G#m
+    'Di mapipigil sa pag-awit
+              F#m
+    'Pagkat ikaw ay mabuti
+              D          B
+    'Pagkat ikaw ay mabuti
+
+    Chorus:
+              E                                   G#m
+    Ikaw ang aking pastol hindi magkukulang
+                A   	               B
+    Sapat na at higit pa (sapat na)
+              E                             G#m
+    Biyaya mo'y sagana at umaapaw
+                A                 B
+    Sapat na at higit pa (sapat na)
+              C#m                             F#7
+    Sapat na sa lahat kong pangangailangan
+              C#m                             F#7
+    Higit pa sa lahat kong inaasahan
+              A   	               G#m
+    Wala na ngang mahihiling pa
+                    F#m7
+    'Pagkat ika'y sapat na
+                B
+    Ika'y sapat na at higit pa
+    Intro***
+    Verse***
+    Chorus***
+    Adlib: 
+    E   G#m7   A   B 
+    Chorus***
+
+
+
+    
+    
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

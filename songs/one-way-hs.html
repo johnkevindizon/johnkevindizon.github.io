@@ -1,87 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>title</title>
-    <link rel="stylesheet" href="css\songs\one-way.css"> 
-  </head>
-  <body>
-    <h1>One Way</h1>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>One Way</h1>
+  <h2>Hillsong</h2>
+  <p>Select key:</p>
+  <pre data-key="B">
+    Intro:
+    B   G#m   F#   E
+    Verse1:
+    B
+    I lay my life down at your feet
+    G#m
+    cause You’re the only one I need
+    F#                                  E
+    I turn to you, and you are always there
+    B
+    In troubled times it’s you I seek
+    G#m
+    I put you first, that’s all I need
+    F#                         E
+    I humble all I am, all to you
 
+    Chorus:
+    B        F#     G#m                      E
+    One way, Jesus, You’re the only one that I could live for
+    B        F#     G#m                      A
+    One way, Jesus, You’re the only one that I could live for
 
+    Interlude
+    G#m  E   G#m  E
 
+    Verse2:
+    B
+    You are always, always there
+    G#m
+    Every how and everywhere
+    F#                                   E
+    Your grace abounds so deeply within me
+    B
+    You will never, ever change
+    G#m
+    Yesterday, today the same
+    F#                             E
+    Forever ‘til forever meets no end
 
-        
-    <div>
-      <label for="transpose">Transpose:</label>
-      <select id="transpose">
-          <option value="-6">Key of F</option>
-          <option value="-5">Key of Gb</option>
-          <option value="-4">Key of G</option>
-          <option value="-3">Key of Ab</option>
-          <option value="-2">Key of A</option>
-          <option value="-1">Key of Bb</option>
-          <option value="0" selected>Original</option>
-          <option value="1">Key of C</option>
-          <option value="2">Key of Db</option>
-          <option value="3">Key of D</option>
-          <option value="4">Key of Eb</option>
-          <option value="5">Key of E</option>
-          <option value="6">Key of F</option>
-      </select>
-  </div>
-
-  <pre id="lyrics">
-      Intro: <span class="chord">B</span> – <span class="chord">G#m</span> – <span class="chord">F#</span> – <span class="chord">E</span>
-
-      Verse1:
-      <span class="chord">B</span>
-      I lay my life down at Your feet
-      <span class="chord">G#m</span>
-      Cause You're the only one I need
-      <span class="chord">F#</span>                              <span class="chord">E</span>   <span class="chord">E</span>
-      I turn to You and You are always there
-      <span class="chord">B</span>
-      In troubled times it's You I seek
-      <span class="chord">G#m</span>
-      I put You first that's all I need
-      <span class="chord">F#</span>                                    <span class="chord">E</span>   <span class="chord">E</span>
-      I humble all I am all to You
-
-      Chorus:
-      (<span class="chord">B</span>              <span class="chord">F#</span>)
-      One way, Jesus
-      <span class="chord">G#m</span>                                    <span class="chord">E</span>                          
-      You're the only one that I could live for
-      <span class="chord">B</span>                <span class="chord">F#</span>
-      One Way, Jesus
-      <span class="chord">G#m</span>                                    <span class="chord">A</span>                        (<span class="chord">G#m</span> - <span class="chord">E</span>)2X
-
-      Verse2:
-      <span class="chord">B</span>                            
-      You are always, always there
-      <span class="chord">G#m</span>
-      Every how and everywhere
-      <span class="chord">F#</span>                                                                  <span class="chord">E</span>
-      Your grace abounds so deeply within me
-      <span class="chord">B</span>
-      You will never ever change
-      <span class="chord">G#m</span>
-      Yesterday today the same
-      <span class="chord">F#</span>                                                       <span class="chord">E</span>
-
-      Bridge:
-      <span class="chord">B</span>                                   <span class="chord">F#</span>                     
-      You are the Way the Truth and the Life
-      <span class="chord">G#</span>                               <span class="chord">E</span>                          <span class="chord">G#m</span>  
-      We live by faith and not by sight for You
-      <span class="chord">F#</span>                      <span class="chord">E</span>      <span class="chord">E</span>
+    Bridge:
+    B                    F#
+    You are the way the truth and the life
+        G#m               E                G#m           
+    We live by faith and not by sight for you 
+      F#                 E
+    we’re living all for you
   </pre>
-
-
-
-
-
-    <script src="/songs-js/one-way.js" defer></script>
-  </body>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
 </html>

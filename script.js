@@ -14,21 +14,15 @@ $(document).ready(function(){
    });
 });
 
-$(document).ready(function(){
-  $('.sub-btn').click(function(){
-     $(this).next('.sub-menu').slideToggle();
-     $(this).find('.dropdown').toggleClass('rotate');
-  });
+function toggleDropdown(){
+  var dropdown = document.getElementById("song-list");
+  if (dropdown.style.left ==="-100%") {
+    dropdown.style.left = "0";
+  } else {
+    dropdown.style.left = "-100%";
+  }
+}
 
-  $('.menu-btn').click(function(){
-     $('.left-bar').addClass('active');
-     $('menu-btn').css("visibility", "hidden");
-  });
-  $('.close-btn').click(function(){
-     $('.left-bar').removeClass('active');
-     $('menu-btn').css("visibility", "visible");
-  });
-});
 
 
 function sortSongs() {

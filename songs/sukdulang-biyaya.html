@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Sukdulang Biyaya</h1>
+  <h2>Musikatha</h2>
+  <p>Select key:</p>
+  <pre data-key="A"> 
+    Intro:   
+    A   F#m   D   A
+    Verse1:
+    A 			 F#m  
+    Habang hindi karapat dapat
+            D                                               A
+    Pag-ukulan ng habag at wagas Mong pagsinta
+    A 			        F#m  
+    Habang walang kakayanan
+                D                                             A
+    na suklian Ka ng mabuti sa lahat Mong ginawa
+    Verse1:
+
+    Pre-Chorus:
+      F#m    E       D
+    Niyakap Mo ako sa aking karumihan
+                F#m   E            Bm  	      	 E   
+    Inibig Mo ako ng ‘di kayang tumbasan
+
+    Chorus1:
+              A  	       F#m  
+    O Diyos ng katarungan at katuwiran
+    Bm 		     E   	     D
+    na kahit minsa’y ‘di nabahiran
+    C#                       F#7  
+    ang kabanala’t kaluwalhatian
+        Bm 		 E  
+
+    Verse 2:
+    A 			 F#m  
+    Ang walang salang Manunubos
+            D                                         A
+    ang umako ng parusang nararapat sa ‘kin
+    A                     F#m 
+    Anong habag sa tulad ko’y igawad ang Iyong 
+            D                                             A         E
+    Katuwiran at ako’y patawarin
+
+    Pre-Chorus2x***
+
+    Chorus2:
+              A  	       F#m  
+    O Diyos ng katarungan at katuwiran
+    Bm 		     E   	     D
+    na kahit minsa’y ‘di nabahiran
+    C#                       F#7  
+    ang kabanala’t kaluwalhatian
+        Bm 		 A 	   G      E
+    Salamat sa sukdulang biyaya Mo
+        A  	    	         F#m  
+    O Diyos ng pag-ibig na mas malawak 
+        Bm      E      D        C#m     
+    pa kaysa aking mga pagkakasala
+                        F#7  
+    Higit pa sa buhay ko
+               Bm            E 
+    Salamat sa sukdulang biyaya Mo
+
+    Adlib:   
+    A   F#m   Bm   E  
+    D   C#   F#m   Bm   E  
+
+    Chorus2***
+
+
+
+    
+    
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

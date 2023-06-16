@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>I`m Forever Yours</h1>
+  <h2>Planetshakers</h2>
+  <p>Select key:</p>
+  <pre data-key="D">
+    Intro: 
+    D   A/C#   Bm7   A   G   G 
+    Verse1:
+    G                               D                                
+    I give my all to You
+    G                               D                                
+    Send me and I will go for You
+                 A                                                             
+    To the ends of the earth
+         D/F#                   G                               
+    I'll follow after You
+                       C
+    I want the world to know
+             G                            A                                
+    Your Love endures forever
+    Verse2:
+    G                               D                                
+    Tell me and I'll obey
+    G                               D                                
+    This is far greater than sacrifice
+                   A                                                             
+    Trusting you and not myself
+            D/F#                   G                               
+    Will always lead to blessing
+                                C
+    Lord have your way in me
+                        G                  A
+    Not my will, Yours be done
+    Chorus:
+    D                            A/C#            
+    Here I stand within Your Presence
+    Bm7                         A
+    Longing for Your touch
+        G                              D/F#
+    A thousand days cannot compare
+    Em7                                 A
+    To one day in Your courts
+    D             A/C#                   Bm7                 A
+    Hold me now and never ever let me go
+            G         D/F#                        Em7
+    My Jesus, my Precious Savior
+    A                        D  A/C#  Bm7  A  G  G
+    I'm forever Yours
+    Bridge:
+    D       A/C#      Bm7    A 
+    I will worship You forever
+    G       D/F#        A
+    I will worship You
+    
+    
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

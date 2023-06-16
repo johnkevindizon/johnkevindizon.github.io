@@ -126,7 +126,7 @@ body {
     }
     .side-bar {
         display: block;
-        background: rgba(255, 255, 255, .1);
+        background: #1c1c1c3d;
         backdrop-filter: blur(5px);
         width: 250px;
         height: 100vh;
@@ -136,6 +136,7 @@ body {
         overflow-y: auto;
         transition: .6s ease;
         transition-property: right;
+        z-index: 1;
     }
     .side-bar.active{
         right: 0;
@@ -156,7 +157,7 @@ body {
         padding: 5px 30px;
         line-height: 50px;
         font-family: 'Montserrat', sans-serif;
-        text-shadow: 0 3px 20px rgba(0, 0, 0, 0.507), 0 3px 3px rgba(0, 0, 0, 0.548);
+        text-shadow: 0 3px 20px rgba(0, 0, 0, 0.685), 0 3px 3px rgba(0, 0, 0, 0.719);
     }
     .side-bar .menu .item a:hover{
         background:rgb(12, 42, 82);
@@ -315,6 +316,7 @@ body {
     color: #000;
     font-family: 'Wix Madefor Display', sans-serif;
     font-size: 14px;
+    margin-left: 5px
 }
 #song-list li a:hover{
     color: rgb(2, 247, 255);
@@ -388,27 +390,81 @@ body {
 
 /* MEDIA QUERIES FOR MAIN */
 @media only screen and (max-width: 900px) {
-    .index1-container {
-        padding: 20px;  
-        margin: 0;
+    .index1-container{
+        margin: auto;
+        display: block;
+        max-width: 100%;
+        margin: auto;
+    }
+    .index1-container h2{
+        font-size: 20px
+    }
+    .index1-container h4{
+        font-size: 14px;
+    }
+    .pnw_nav {
+        background: #101010;
         width: 100%;
-    }
-
-    .index-header {
-        padding: 10px;
-        margin: 0;
-    }
-    .desc {
-        margin: 0;
         padding: 0;
     }
-    .pic1 {
-        max-width: auto;
+    .pnw_nav ul {
+        display: flex;
         margin: 0;
         padding: 10px;
+        width: 100%;
+        overflow: hidden;
+        align-items: center;
     }
-    .pic1 img {
-        margin: 0;
+    .pnw_nav ul li a{
+        font-size: 12px;
+        padding: 15px;
+    }
+    .pnw_nav ul li a:hover {
+        border-bottom: 3px solid rgb(2, 247, 255);
+        transition: .3s ease;
+    }
+    #sort-by {
+        color: #fff;    
+        font-size: 12px;
+    }
+    .main {
         padding: 0;
+    }
+    #song-list {
+        padding-top: 10px;
+        display: absolute;
+        background: rgba(255, 255, 255, 0.623);
+        backdrop-filter: blur(5px);
+        width: auto;
+        height: 100vh;
+        position: absolute;
+        left: -100%;
+        overflow-y: auto;
+        transition: .4s ease;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #songlist:hover {
+        left: 0;
+    }
+    #song-list h3 {
+        font-family: 'Wix Madefor Display', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        padding: 15px;
+        width: 100px;
+    }
+    #song-list li a{
+        color: #000;
+        font-family: 'Wix Madefor Display', sans-serif;
+        font-size: 14px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    #song-list li a:hover{
+        color: rgb(2, 247, 255);
+        transition: .2s ease;
+        background: #101010;
+        padding: 5px;
+        border-radius: 5px;
     }
 } 

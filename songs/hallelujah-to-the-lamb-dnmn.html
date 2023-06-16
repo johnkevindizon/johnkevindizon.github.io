@@ -1,10 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>title</title>
-  </head>
-  <body>
-    <h1 style="text-align: center; color: #000000;">Hallelujah to the Lamb</h1>
-  </body>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Hallelujah to the Lamb</h1>
+  <h2>Don Moen</h2>
+  <p>Select key:</p>
+  <pre data-key="G#">
+Intro:  
+G#  C# 
+
+Verse1:
+G#                                                C#
+Lord I stand in the midst of a multitude
+     G#                           D#/G          Fm     
+Of those from every tribe and tongue
+D#                   C#                            Cm   Bbm
+We are Your people redeemed by Your blood
+                          D#                              C#  D#
+Rescued from death by Your love
+                        G#
+There are no words
+                              C#
+Good enough to thank You
+                        C#            D#/G            Fm
+There are no words to express my praise
+                 C#        
+But I will lift up my voice
+         Cm                  Fm
+And sing from my heart
+         Bbm                       C#   D#
+With all of my strength
+
+Chorus:
+         G#               Fm             C#
+Hallelujah hallelujah hallelujah
+                  D#
+To the Lamb
+       G#              Fm
+Hallelujah hallelujah
+             C#                                D#
+By the blood of Christ we stand
+           G#                    Fm
+Every tongue every tribe
+           C#                    D#
+Every people every land
+            G#                  Fm
+Giving glory giving honor
+            C#                        D#           G#    Fm  D#
+Giving praise unto the Lamb of God
+
+Verse2:
+G#                                                    C#
+Lord we stand by grace in Your presence
+G#                         D#/G               Fm     
+Cleansed by the blood of the Lamb
+D#                   C#                            Cm   Bbm
+We are Your children called by Your name
+                        D#                              D   E
+Humbly we bow and we pray
+                         A                                          D
+Release Your power, to work in us and through us
+                    A                        E/G#      F#m
+Till we are changed, to be more like You
+
+                       D                            
+Then all the nations will see
+         C#m       F#m              Bm         Esus4  E              
+Your glory revealed, And worship You
+
+Chorus:
+         A               F#m             D
+Hallelujah hallelujah hallelujah
+                  E
+To the Lamb
+       A              F#m
+Hallelujah hallelujah
+             D                                E
+By the blood of Christ we stand
+           A                    F#m
+Every tongue every tribe
+           D                      E
+Every people every land
+            A                  F#m
+Giving glory giving honor
+            D                          E              A     
+Giving praise unto the Lamb of God
+
+Bridge: 
+F         C                 G
+Every knee shall bow
+F         C                                    G                         E
+Every tongue confess, That You are Lord of all
+
+
+
+            D                          E              A     G#m   F#m   E 
+Giving praise unto the Lamb of God
+            E                                            F
+Giving praise unto the Lamb of God
+Dm7    G                            A
+JESUS CHRIST LAMB OF GOD
+
+
+
+    
+    
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
 </html>

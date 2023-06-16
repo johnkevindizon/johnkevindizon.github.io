@@ -125,7 +125,8 @@ body {
     }
     .side-bar {
         display: block;
-        background: rgba(255, 255, 255, .1);
+        /* background: rgba(255, 255, 255, .1); */
+        background: #1c1c1c3d;
         backdrop-filter: blur(5px);
         width: 250px;
         height: 100vh;
@@ -159,7 +160,7 @@ body {
     }
     .side-bar .menu .item a:hover{
         background:rgb(12, 42, 82);
-    }
+    }   
     .side-bar .menu .item i{
         margin-right: 15px;
     }
