@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Great things</h1>
+  <h2>Phil Wickham</h2>
+  <p>Select key:</p>
+  <pre data-key="G">
+    Intro:   
+    G   Am7   Em   C 
+
+    Verse1:
+    G
+    Come let us worship our King
+    Come let us bow at His feet
+              C
+    He has done great things
+    G
+    See what our Savior has done
+    See how His love overcomes
+              C
+    He has done great things
+              Em                  D     
+    He has done great things
+
+    Chorus:
+          G
+    Oh, hero of Heaven, You conquered the grave
+            Em
+    You free every captive and break every chain
+    D    C  
+    Oh God, You have done great things
+          G
+    We dance in Your freedom, awake and alive
+          Em
+    Oh Jesus, our Savior, Your name lifted high
+    D    C
+    Oh God, You have done great things
+
+    Intro***
+
+    Verse2:
+                          G
+    You've been faithful through every storm
+    You'll be faithful forevermore
+                  C
+    You have done great things
+              G
+    And I know You will do it again
+    For Your promise is "Yes and amen"
+            C
+    You will do great things
+              Em                  D     
+    God, You do great things
+
+    Chorus***
+
+    Bridge:
+    C       D      
+    Hallelujah God, above it all
+    Em      Bm
+    Hallelujah God, unshakable
+    C             D             Em         Bm   D/F#
+    Hallelujah, You have done great things
+
+
+
+
+  </pre>
+  <!-- C                 D		Em	 Bm (D/F#)  -->
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

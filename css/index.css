@@ -120,7 +120,7 @@ body {
     .toggle-button {
         display: flex;
     }
-    .links {
+    .links { 
         display: none;
     }
     .side-bar {
@@ -170,7 +170,8 @@ body {
         margin: 20px;
     }
     .side-bar .menu .item .sub-menu {
-        background: rgba(255, 255, 255, .1);
+        /* background: rgba(255, 255, 255, .1); */
+        background: #1c1c1c3d;
         display: none;
     }
     .side-bar .menu .item .sub-menu a{

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Worthy is the Lamb</h1>
+  <h2>Hillsong</h2>
+  <p>Select key:</p>
+  <pre data-key="G">
+    Intro:  
+    G   D/F#   Am7   G/B   C   C
+
+    Verse1:
+                                    C                 G
+    Thank you for the cross, Lord.
+                                      C      D      G
+    Thank you for the price you paid.
+                              D/F#      Em            D              C
+    Bearing all my sin and shame, in love you came
+            Am7   G           D/F#
+    And gave Amazing Grace.
+
+    Verse2:
+                                    C                 G
+    Thank you for this love, Lord.
+                                      C     D                 G
+    Thank you for the nail-pierced hands.
+                                  D/F#         Em              D     C
+    Wash me in Your cleansing flow, now all I know...
+                  Am7        G                   D/F#
+    Your forgiveness and embrace.
+
+    Chorus:
+    G                            D/F#
+    Worthy is the Lamb
+    Am7     G/B      C
+    Seated on the throne.
+            D                       C          G/B            C
+    We crown You now with many crowns
+            Am7       G  D/F#
+    You reign victorious!
+    G                         D/F#
+    High and lifted up
+    Am7   G/B         C
+    Jesus, Son of God.
+            D                  C           G/B           C    Am7
+    The darling of Heaven, crucified...
+    Am7   G/B     C        C    Am7
+    Worthy is the Lamb.
+    Am7   G/B     C        C    
+    Worthy is the Lamb.
+
+
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

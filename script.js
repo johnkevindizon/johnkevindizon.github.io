@@ -23,6 +23,12 @@ function toggleDropdown(){
   }
 }
   
+$(document).ready(function(){
+  $('.songlists').click(function(){
+    //  $(this).next('.sub-menu').slideToggle();
+     $(this).find('.fa-caret-down').toggleClass('rotate2');
+  });
+});
 
 
 function sortSongs() {

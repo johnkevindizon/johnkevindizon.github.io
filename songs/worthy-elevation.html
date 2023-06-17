@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Worthy</h1>
+  <h2>Elevation</h2>
+  <p>Select key:</p>
+  <pre data-key="C">
+    Intro:  
+    Am   C   F   G 
+
+    Verse1:
+    C                     G                                           
+    It was my cross You bore
+                  C/E               F              G
+    So I could live in the freedom You died for
+            C                   G
+    And now my life is Yours
+          C/E                                 F                    G         
+    And I will sing of Your goodness forevermore
+
+    Chorus:
+                      F            Am  G
+    Worthy is Your name, Jesus
+                              C/E                  
+    You deserve the praise
+              Am        
+    Worthy is Your name
+                                F            Am G 
+    Worthy is Your name, Jesus
+    C/E                  
+    You deserve the praise
+                    Am
+    Worthy is Your name
+
+    Intro***  
+
+    Verse2:
+    C                     G                                              
+    And now my shame is gone
+                      C/E     F                                 G
+    I stand amazed in Your love undeniable 
+    C          G
+    Your grace goes on and on
+          C/E                                 F                    G         
+    And I will sing of Your goodness forevermore
+
+
+    
+    
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
