@@ -423,7 +423,10 @@ body {
     }
     .pnw_nav ul li a{
         font-size: 12px;
-        padding: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
     .pnw_nav ul li a:hover {
         border-bottom: 3px solid rgb(2, 247, 255);
@@ -432,6 +435,8 @@ body {
     #sort-by {
         color: #fff;    
         font-size: 12px;
+        padding-left: 5px;
+        padding-right: 10px;
     }
     .main {
         padding: 0;
