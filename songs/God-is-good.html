@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>God is Good</h1>
+  <h2>Don Moen</h2>
+  <p>Select key:</p>
+  <pre data-key="D">
+    Intro:  
+    D  Bm  G  A
+    G  A  D  G  A
+
+    Chorus:
+        D                     Bm                                                             
+    God is good all the time
+            G                                    A  
+    He put a song of praise in this heart of mine
+        D                     Bm                                                             
+    God is good all the time
+                    G                                    A  
+    Through the darkest night, His light will shine
+              G              A              D     G    D  
+    God is good, God is good all the time
+
+    Verse1:
+            A                                  Bm
+    If you're walking through the valley
+        G                   Bm   A
+    And there are shadows all around
+        F#m                        Bm  
+    Do not fear, He will guide you
+          G                              A 
+    He will keep you safe and sound
+    Em                        A
+    He has promised to never leave you
+          Em                         G            A
+    Nor forsake you, and His word is true
+
+    Verse2:
+              A                        Bm
+    We were sinners and so unworthy
+        G                    Bm   A 
+    Still for us He chose to die
+        F#m                        Bm  
+    He Filled us with His Holy Spirit
+          G                              A 
+    Now we can stand and testify
+    Em                  A
+    That His love is everlasting
+          Em                           G          A
+    And His mercies, they will never end
+
+    Bridge:
+    D/C#        Bm                      F#m    
+    Though I may not understand
+        Em                            Am7
+    All the plans you have for me
+    Bb                     F
+    My life is in your hands
+                          Em        D/F# 
+    And through the eyes of faith
+      G         A
+    I can clearly see
+
+
+
+
+    
+    
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
