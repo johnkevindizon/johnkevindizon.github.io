@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>For All You`ve Done</h1>
+  <h2>Hillsong</h2>
+  <p>Select key:</p>
+  <pre data-key="A">
+    Intro:    
+    A  D
+
+    Verse:
+    A                D
+    My Savior, Redeemer
+    A                                D
+    Lifted me from the miry clay
+    A              D
+    Almighty forever
+    A                              D
+    I will never be the same
+    Pre - Chorus:   
+                                  F#m7                          D
+    'Cause You came near from the everlasting
+                                  A
+    To the world we live
+                                E      
+    The Father's only Son
+
+    Chorus:
+                  A 	      E  
+    Cause You lived, You died
+          D                      E
+    You rose again on high
+          A                    E 
+    You opened the way
+                  D                     E
+    For the world to live again
+            D  E              A   D          
+    Hallelujah for all You've done
+
+    Instrumental: 
+    F#m  D  A  E 
+
+    Outro: 
+
+            D  E              F#m C#m   A        
+    Hallelujah for all You've done
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>No Longer Slaves</h1>
+  <h2>Bethel Music</h2>
+  <p>Select key:</p>
+  <pre data-key="D">
+    Intro:   
+    D  
+
+    Verse1:
+                D                          F#m7
+    You unravel me with a melody
+                G                      A           D
+    You surround me with a song
+              D                               F#m7
+    Of deliverance from my enemies
+          G               A                D   
+    'Til all my fears are gone
+
+    Chorus:
+                G                A             D
+    I'm no longer a slave to fear
+        Bm7       A           D
+    I am a child of God
+                G                A             D 
+    I'm no longer a slave to fear
+        Bm7       A           D
+    I am a child of God
+
+    Verse2:
+                    D                         
+    From my mother's womb
+                      F#m7
+    You have chosen me
+    G                      A           D
+    Love has called my name
+                    D                          F#m7
+    I've been born again to a family
+                    G               A                D   
+    Your blood flows through my veins
+
+    Instrumental: 
+    Bm7  A  D  G 
+
+    Bridge2x: 
+    Bm7                A                       D                  G          
+    You split the sea, So I could walk right through it
+    Bm7                A                                D                  G          
+    My fears are drowned in perfect love
+    Bm7                A                       D                  G          
+    You rescued me, And I will stand and sing
+      G             A          D 
+    I am a child of God
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
