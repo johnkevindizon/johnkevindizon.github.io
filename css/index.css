@@ -37,7 +37,7 @@ body {
     margin: 0 auto;
 }
 .logo img:hover {
-    transform: rotate(360deg);
+    transform: rotateY(360deg);
     transition: .7s ease;
 }
 .links ul {
