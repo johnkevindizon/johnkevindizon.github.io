@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Refiner`s Fire</h1>
+  <h2>Jeremy Riddle</h2>
+  <p>Select key:</p>
+  <pre data-key="E">
+    Intro:
+    E  E/D#  C#m7  F#m7  B 
+    Verse1:
+    E         E/D#	C#m7	
+    Purify my heart
+                        F#m7
+    Let me be as gold
+            Bsus4       B
+    And precious silver
+    E         E/D#	C#m7	
+    Purify my heart
+                        F#m7
+    Let me be as gold
+    Bsus4       B
+    Pure gold
+
+    Chorus:
+    E   A          B    
+    Refiner's fire
+    E                  A     B
+    My heart's one desire
+    E            B
+    Is to be holy
+    E        A            B  
+    Set apart for You Lord
+        C#m7    B
+    I choose to be holy
+    E       A            C#m7       B
+    Set apart for You My Master
+    F#m7        B            E
+    Ready to do Your will 
+
+    Verse2:
+    E       E/D#          C#m7	
+    Purify my heart
+                                    F#m7
+    Cleanse me from within
+            Bsus4       B
+    And make me holy
+    E         E/D#	C#m7	
+    Purify my heart
+                                    F#m7
+    Cleanse me from my sin
+    Bsus4       B
+    Deep within
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
