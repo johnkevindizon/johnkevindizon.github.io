@@ -208,9 +208,12 @@ body {
 /*MAIN-CONTENT*/
 
 .index1-container{
+    margin: auto;
     display: block;
+    max-width: 100%;
+    margin: auto;
 }
-/* .index1-container h2{
+.index1-container h2{
     color: #fff;
     text-align: center;
     font-family: 'Wix Madefor Display', sans-serif;
@@ -221,7 +224,7 @@ body {
     text-align: center;
     font-family: 'Wix Madefor Display', sans-serif;
     font-size: 20px;
-} */
+}
 .pnw_nav {
     margin-top: 15px;
     background: #101010;
@@ -230,31 +233,11 @@ body {
 }
 .pnw_nav ul {
     display: flex;
-    margin: auto;
+    margin: 0;
     padding: 20px;
     width: 100%;
     overflow: hidden;
     align-items: center;
-    /* justify-content: center; */
-}
-.header-pnw{
-    margin-right: 50px;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-.header-pnw h2{
-    text-align: left;
-    color: #fff;
-    font-family: 'Wix Madefor Display', sans-serif;
-    font-size: 25;
-}
-.header-pnw h4{
-    text-align: left;
-    color: #fff;
-    font-family: 'Wix Madefor Display', sans-serif;
-    font-size: 15px;
 }
 .pnw_nav ul li {
     list-style: none;
@@ -271,8 +254,10 @@ body {
     margin: 2px;
 }
 .pnw_nav ul li a:hover {
+    background: #1C1C1C;
     color: rgb(2, 247, 255);
-    transition: .2s ease;
+    border-bottom: 3px solid rgb(2, 247, 255);
+    transition: .3s ease;
 }
  .main{
     display: flex;
@@ -446,6 +431,7 @@ body {
         padding-left: 10px;
     }
     .pnw_nav ul li a:hover {
+        border-bottom: 3px solid rgb(2, 247, 255);
         transition: .3s ease;
     }
     #sort-by {
