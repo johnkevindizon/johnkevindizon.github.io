@@ -29,13 +29,17 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
+.logo-cont {
+    display: block;
+    width: 100%;
+}
 .logo img {
-    width: 70px;
+    float: right;
+    width: 50px;
     height: auto;
-    padding: 0;
-    margin: 0 auto;
-    
-    
+    right: 0;
+    padding-top: 3px;
+    margin-right: 40px;    
 }
 .logo img:hover {
     transform: rotateY(360deg);
@@ -99,6 +103,12 @@ body {
 }
 #activee2 {
     border-bottom: 3px solid rgb(2, 247, 255);
+}
+#activee3 {
+    color: white;
+}
+#activee4 {
+    color: rgb(2, 247, 255);
 }
 .links li:hover {
     color: rgb(2, 247, 255);
@@ -213,51 +223,37 @@ body {
     max-width: 100%;
     margin: auto;
 }
-.index1-container h2{
-    color: #fff;
-    text-align: center;
-    font-family: 'Wix Madefor Display', sans-serif;
-    font-size: 40px
-}
-.index1-container h4{
-    color: #fff;
-    text-align: center;
-    font-family: 'Wix Madefor Display', sans-serif;
-    font-size: 20px;
-}
 .pnw_nav {
-    margin-top: 15px;
+    display: flex;
     background: #101010;
     width: 100%;
     padding-left: 70px;
 }
-.pnw_nav ul {
-    display: flex;
-    margin: 0;
-    padding: 20px;
-    width: 100%;
-    overflow: hidden;
-    align-items: center;
+.pnw_nav button{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+    background: #101010;
+    width: 200px;
 }
-.pnw_nav ul li {
-    list-style: none;
 
-}
-.pnw_nav ul li a{
+.pnw_nav h2{
     color: #fff;
-    cursor: pointer;
-    font-size: 14px;
+    text-align: center;
     font-family: 'Wix Madefor Display', sans-serif;
-    padding: 25px;
+    font-size: 20px;
+    align-self: center;
+    text-align: left;
+    width: 820px;
 }
-.pnw_nav ul li a i{
-    margin: 2px;
-}
-.pnw_nav ul li a:hover {
-    background: #1C1C1C;
-    color: rgb(2, 247, 255);
-    border-bottom: 3px solid rgb(2, 247, 255);
-    transition: .3s ease;
+.pnw_nav h4{
+    color: #fff;
+    text-align: center;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 20px;
+    width: 700px;
+    align-self: center;
+    text-align: left;
 }
  .main{
     display: flex;
@@ -266,70 +262,8 @@ body {
     background: #fff;
     width: 100%;
     height: 100%;
- }
- #sort-by {
-    color: #fff;
-    font-family: 'Wix Madefor Display', sans-serif;
-    font-size: 14px;
-    padding-right: 15px;
-    padding-left: 15px;
- }
- #sort-select {
-    padding: 3px;
-    margin: 0;
-    align-self: center;
-    border-radius: 15px;
-}
-#sort-select option{
-    font-family: 'Wix Madefor Display', sans-serif;
-}
-.main select {
-    align-self: center;
-    width: 15%;
-}
-.main ul {
-    list-style-type: none;
-    padding: 0;
 }
 
-.main ul li {
-    margin-bottom: 10px;
-}
-#song-list {
-    padding-top: 10px;
-    display: absolute;
-    background: rgba(255, 255, 255, 0.623);
-    backdrop-filter: blur(5px);
-    width: auto;
-    height: 100vh;
-    position: absolute;
-    left: 0;
-    overflow-y: auto;
-    transition: .4s ease;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#song-list h3 {
-    font-family: 'Wix Madefor Display', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    padding: 15px;
-    width: 100px;
-}
-#song-list li a{
-    color: #000;
-    font-family: 'Wix Madefor Display', sans-serif;
-    font-size: 14px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-#song-list li a:hover{
-    color: rgb(2, 247, 255);
-    transition: .2s ease;
-    background: #101010;
-    padding: 5px;
-    border-radius: 5px;
-}
 #iframee {
     width: 100%;
     height: 100vh;
@@ -337,7 +271,183 @@ body {
 }
 .rotate2 {
     transform: rotate(180deg);
+    color: #ffffff;
 }
+.rotate3 {
+    transform: rotate(180deg);
+    color: #02f7ff;
+}
+
+/* DROPDOWN FOR LIST OF SONGS */
+#dropdown-toggle-Songs {
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 14px;
+}
+#dropdown-toggle-Songs i{
+    margin-left: 5px;
+}
+
+.dropdown-content-Songs {
+    display: none;
+    position: absolute;
+    width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 25px;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(5px);
+    height: 50vh;
+    margin-top: 5px;
+    margin-left: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dropdown-content-Songs a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 14px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.dropdown-content-Songs a:hover {
+    color: rgb(2, 247, 255);
+    transition: .2s ease;
+    background: #101010;
+    border-radius: 5px;
+}
+
+.show {
+    display: block; 
+}
+
+#Nsonglists {
+    position: absolute;
+    width: auto;
+    height: 43vh;
+    overflow-y: scroll;
+}
+  
+/* DROPDOWN FOR SETLISTS */
+#dropdown-toggle-Setlists {
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 14px;
+}
+  #dropdown-toggle-Setlists i{
+    margin-left: 5px;
+    }
+
+  .dropdown-content-Setlists {
+    display: none;
+    position: absolute;
+    width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 25px;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(5px);
+    height: 50vh;
+    margin-top: 5px;
+    margin-left: 730px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+
+  .dropdown-content-Setlists a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 14px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  
+  .dropdown-content-Setlists a:hover {
+    color: rgb(2, 247, 255);
+    transition: .2s ease;
+    background: #101010;
+    border-radius: 5px;
+  }
+  
+  .show {
+    display: block; 
+  }
+  #Nsetlists {
+    position: absolute;
+    width: auto;
+    height: 43vh;
+    overflow-y: scroll;
+}
+  
+  
+/* CSS FOR SEARCH SONGS INPUT */
+.searchSongsContain{
+    border: 2px solid gray;
+    border-radius: 20px;
+    display: flex;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.searchSongsContain i{
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+#searchSongsInput{
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    background: none;
+    padding-left: 10px;
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+#searchSongsInput::placeholder{
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 14px;
+}
+ 
+/* CSS FOR SEARCH Setlist INPUT */
+.searchSetContain{
+    border: 2px solid gray;
+    border-radius: 20px;
+    display: flex;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.searchSetContain i{
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+#searchSetInput{
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    background: none;
+    padding-left: 10px;
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+#searchSetInput::placeholder{
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 14px;
+}
+
+
 
 /* FOOTER */    
 
@@ -404,80 +514,101 @@ body {
         max-width: 100%;
         margin: auto;
     }
-    .index1-container h2{
-        font-size: 20px
+    .menu-btn {
+        position: absolute;
+        
     }
     .index1-container h4{
         font-size: 14px;
     }
-    .pnw_nav {
-        background: #101010;
-        width: 100%;
-        padding: 0;
-    }
-    .pnw_nav ul {
-        display: flex;
-        margin: 0;
-        padding: 10px;
-        width: 100%;
-        overflow: hidden;
-        align-items: center;
-    }
-    .pnw_nav ul li a{
-        font-size: 12px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    .pnw_nav ul li a:hover {
-        border-bottom: 3px solid rgb(2, 247, 255);
-        transition: .3s ease;
-    }
-    #sort-by {
-        color: #fff;    
-        font-size: 12px;
-        padding-left: 5px;
-        padding-right: 10px;
-    }
     .main {
         padding: 0;
+        margin: 0;
     }
-    #song-list {
-        padding-top: 10px;
-        display: absolute;
-        background: rgba(255, 255, 255, 0.623);
-        backdrop-filter: blur(5px);
-        width: auto;
-        height: 100vh;
-        position: absolute;
-        left: 0;
-        overflow-y: auto;
-        transition: .4s ease;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .pnw_nav {
+        display: block;
+        background: #10101091;
+        width: 100%;
+        padding-left: 30px;
+        padding-bottom: 5px;
     }
-    #songlist:hover {
-        left: 0;
+    .pnw_nav button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-right: 5px;
+        background: rgba(2, 247, 255, 0.171);
+        width: 30%;
+        border-radius: 20px;
     }
-    #song-list h3 {
-        font-family: 'Wix Madefor Display', sans-serif;
-        font-size: 20px;
+    .pnw_nav h2{
+        font-size: 17px;
+        align-self: center;
+        text-align: left;
+        width: 100%;
+        padding-top: 25px;
+    }
+    .pnw_nav h4{
+        color: #fff;
         text-align: center;
-        padding: 15px;
-        width: 100px;
-    }
-    #song-list li a{
-        color: #000;
         font-family: 'Wix Madefor Display', sans-serif;
         font-size: 14px;
-        margin-left: 25px;
-        margin-right: 25px;
+        width: 100%;
+        align-self: center;
+        text-align: left;
     }
-    #song-list li a:hover{
-        color: rgb(2, 247, 255);
-        transition: .2s ease;
-        background: #101010;
-        padding: 5px;
-        border-radius: 5px;
+    .logo-cont {
+        top: 20px;
+        right: 0;
+        display: none;
+        position: absolute;
+        width: 10px;
+    }
+    .logo img {
+        width: 50px;
+        height: auto;
+        margin-right: 20px;
+
+    }
+    /* CSS FOR SEARCH SONGS INPUT */
+    .searchSongsContain{
+        width: 100%;
+    }
+    .dropdown-content-Songs {
+        width: 250px;
+        height: 50vh;
+        margin-left: 10px;
+      }
+    .searchSongsContain i{
+        padding-left: 10px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    #searchSongsInput{
+        font-family: 'Wix Madefor Display', sans-serif;
+        font-size: 14px;
+        outline: none;
+        border: none;
+        background: none;
+        padding-left: 10px;
+        width: 100%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    #searchSongsInput::placeholder{
+        font-family: 'Wix Madefor Display', sans-serif;
+        font-size: 14px;
+    }
+    #Nsonglists {
+        position: absolute;
+        width: auto;
+        height: 43vh;
+        overflow-y: scroll;
+    }
+    .dropdown-content-Setlists {
+        width: 250px;
+        height: 50vh;
+        margin-left: 70px;
     }
 } 
