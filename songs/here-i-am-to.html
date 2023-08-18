@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Here I am to Worship</h1>
+  <h2>Hillsong</h2>
+  <p>Select key:</p>
+  <pre data-key="E">
+    Intro:  
+    E B F#m7
+    E B A
+
+    Verse1:
+    E                           B                     F#m7
+    Light of the world, You step down into darkness
+    E                    B           A
+    Open my eyes let me see
+    E                           B                     F#m7
+    Beauty that made this heart adore You
+    E                    B           A
+    Hope of a life spent with You
+
+    Chorus:
+    E                           
+    Here I am to worship
+            E/D#                     
+    Here I am to bow down
+                          E/G#                              A
+    Here I am to say that You're my God
+    E                          
+    You're altogether lovely
+          E/D#                     
+    Altogether worthy
+                          E/G#                  A
+    Altogether wonderful to me
+
+    Intro***
+    
+    Verse2:
+    E                 B                     
+    King of all days
+        F#m7
+    So highly exalted
+    E                   B           A
+    Glorious in heaven above
+    E                     B                    F#m7
+    Humbly you came to the earth you created
+    E                     B                  A           A
+    All for love's sake became poor
+
+    Bridge2x: 
+        B                  E/G#          A                    
+    I'll never know how much it cost
+        B                  E/G#          A                    
+    To see my sin upon that cross
+        B                  E/G#          A                    
+    And I'll never know how much it cost
+        B                  E/G#          A                    
+    To see my sin upon that cross
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

@@ -278,6 +278,8 @@ body {
     color: #02f7ff;
 }
 
+
+
 /* DROPDOWN FOR LIST OF SONGS */
 #dropdown-toggle-Songs {
     color: white;
@@ -448,6 +450,20 @@ body {
 }
 
 
+
+/* SUBLINK FOR SETLISTS */
+
+.sublink-content {
+    display: none;
+    position: relative;
+    margin-left: 25px;
+}
+.sublink-content a{
+    font-size: 12.5px;
+}
+.show {
+    display: block; 
+}
 
 /* FOOTER */    
 

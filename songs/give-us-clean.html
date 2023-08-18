@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Give Us Clean Hands</h1>
+  <h2>Grace Church</h2>
+  <p>Select key:</p>
+  <pre data-key="G">
+    Intro:  
+    G  D  C  G
+
+    Verse:
+    G
+    We bow our hearts
+    D
+    We bend our knees
+    C                                                      G
+    Oh Spirit come make us humble
+    G
+    We turn our eyes
+    D
+    From evil things
+    C                                                      G
+    Oh Lord we cast down our idols
+
+    Chorus:
+                                        G                 
+    So give us clean hands
+                                          D
+    And give us pure hearts
+                  Em                                 C               
+    Let us not lift our souls to another                
+                                        G                 
+    Give us clean hands
+                                          D
+    And give us pure hearts
+                  Em                                 C               
+    Let us not lift our souls to another 
+
+    Intro***  
+    Verse***
+    Chorus***
+
+    Bridge2x: 
+    G
+    Oh God this be
+                              D
+    A generation that seeks
+                      Em                         C
+    Who seeks Your face, Oh God of Jacob
+    
+    Instrumental(2x):  
+    G  D  Em  C
+
+    Chorus***
+    Bridge2x: 
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

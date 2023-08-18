@@ -1,3 +1,4 @@
+// SIDEBAR
 $(document).ready(function(){
    $('.sub-btn').click(function(){
       $(this).next('.sub-menu').slideToggle();
@@ -14,68 +15,18 @@ $(document).ready(function(){
    });
 });
 
-function toggleDropdownSongs(){
-  var dropdown1 = document.getElementById("song-list");
-  var dropdown2 = document.getElementById("setlistsss");
-  var active_1 = document.getElementById("dropdown-toggle");
-  var active_2 = document.getElementById("activee4");
-  
-  // if (dropdown1.style.left ==="-100%") {
-  //   dropdown1.style.left = "0";
-  //   dropdown2.style.left = "-100%";
-  // } else {
-  //   dropdown1.style.left = "-100%";
-  //   dropdown2.style.left = "-100%";
-  // }
-
-  if (active_1.style.color === "rgb(2, 247, 255)") {
-    active_1.style.color = "white";
-    active_2.style.color = "white";
-    
-  } else {
-    active_1.style.color = "rgb(2, 247, 255)";
-    active_2.style.color = "white";
-    
-  }
-}
-function toggleDropdownSets(){
-  var dropdown3 = document.getElementById("setlistsss");
-  var dropdown4 = document.getElementById("song-list");
-  var active_3 = document.getElementById("activee4");
-  var active_4 = document.getElementById("activee4");
-    dropdown4.style.left = "-100%";
-
-  if (dropdown3.style.left ==="-100%") {
-    dropdown3.style.left = "0";
-    dropdown4.style.left = "-100%";
-  } else {
-    dropdown3.style.left = "-100%";
-    dropdown4.style.left = "-100%";
-  }
-
-  if (active_3.style.color === "white") {
-    active_3.style.color = "rgb(2, 247, 255)";
-  } else {
-    active_3.style.color = "white";
-  }
-}
 
 
-
-//DROPDOWN
-
+//DROPDOWN FOR SONGS
 var dropdownContent = document.getElementById("dropdown-content-Songs");
 var dropdownToggle = document.getElementById("dropdown-toggle-Songs");
-
 dropdownToggle.addEventListener("click", function(event) {
   event.stopPropagation();
   dropdownContent.classList.toggle("show");
 });
-
 dropdownContent.addEventListener("click", function(event) {
   event.stopPropagation();
 });
-
 window.addEventListener("click", function(event) {
   if (!event.target.matches("#dropdown-toggle-Songs")) {
     if (dropdownContent.classList.contains("show")) {
@@ -83,7 +34,6 @@ window.addEventListener("click", function(event) {
     }
   }
 });
-
 // Add event listeners to links inside the dropdown
 var dropdownLinks = dropdownContent.getElementsByTagName("a");
 for (var i = 0; i < dropdownLinks.length; i++) {
@@ -111,10 +61,8 @@ $(document).ready(function(){
 
 
 // SEARCH BAR FOR SONGS
-
 const searchInput = document.getElementById("searchSongsInput");
 const itemList = document.getElementById("Nsonglists").getElementsByTagName("a");
-
 searchInput.addEventListener("input", function() {
   const searchTerm = searchInput.value.toLowerCase();
 
@@ -132,20 +80,16 @@ searchInput.addEventListener("input", function() {
 
 
 
-//DROPDOWN
-
+//DROPDOWN FOR SETLISTS
 var dropdownContentSet = document.getElementById("dropdown-content-Setlists");
 var dropdownToggleSet = document.getElementById("dropdown-toggle-Setlists");
-
 dropdownToggleSet.addEventListener("click", function(event) {
   event.stopPropagation();
   dropdownContentSet.classList.toggle("show");
 });
-
 dropdownContentSet.addEventListener("click", function(event) {
   event.stopPropagation();
 });
-
 window.addEventListener("click", function(event) {
   if (!event.target.matches("#dropdown-toggle-Setlists")) {
     if (dropdownContentSet.classList.contains("show")) {
@@ -153,21 +97,18 @@ window.addEventListener("click", function(event) {
     }
   }
 });
-
 // Add event listeners to links inside the dropdown
-var dropdownLinks = dropdownContentSet.getElementsByTagName("a");
-for (var i = 0; i < dropdownLinks.length; i++) {
-  dropdownLinks[i].addEventListener("click", function() {
-    dropdownContentSet.classList.remove("show");
-  });
-}
+// var dropdownLinks = dropdownContentSet.getElementsByTagName("a");
+// for (var i = 0; i < dropdownLinks.length; i++) {
+//   dropdownLinks[i].addEventListener("click", function() {
+//     dropdownContentSet.classList.remove("show");
+//   });
+// }
 
 
 // SEARCH BAR FOR SETLISTS
-
 const searchInputSet = document.getElementById("searchSetInput");
 const itemListSet = document.getElementById("Nsetlists").getElementsByTagName("a");
-
 searchInputSet.addEventListener("input", function() {
   const searchTerm = searchInputSet.value.toLowerCase();
 
@@ -182,3 +123,43 @@ searchInputSet.addEventListener("input", function() {
     }
   }
 });
+
+
+
+//DROPDOWN FOR SUBLINK1
+var SublinkdropdownContent1 = document.getElementById("sublink-content1");
+var SublinkdropdownToggle1 = document.getElementById("setlist-sublink-toggle1");
+SublinkdropdownToggle1.addEventListener("click", function(event) {
+  event.stopPropagation();
+  SublinkdropdownContent1.classList.toggle("show");
+});
+SublinkdropdownContent1.addEventListener("click", function(event) {
+  event.stopPropagation();
+});
+window.addEventListener("click", function(event) {
+  if (!event.target.matches("#setlist-sublink-toggle1")) {
+    if (SublinkdropdownContent1.classList.contains("show")) {
+      SublinkdropdownContent1.classList.remove("show");
+    }
+  }
+});
+
+
+//DROPDOWN FOR SUBLINK2
+var SublinkdropdownContent2 = document.getElementById("sublink-content2");
+var SublinkdropdownToggle2 = document.getElementById("setlist-sublink-toggle2");
+SublinkdropdownToggle2.addEventListener("click", function(event) {
+  event.stopPropagation();
+  SublinkdropdownContent2.classList.toggle("show");
+});
+SublinkdropdownContent2.addEventListener("click", function(event) {
+  event.stopPropagation();
+});
+window.addEventListener("click", function(event) {
+  if (!event.target.matches("#setlist-sublink-toggle2")) {
+    if (SublinkdropdownContent2.classList.contains("show")) {
+      SublinkdropdownContent2.classList.remove("show");
+    }
+  }
+});
+
