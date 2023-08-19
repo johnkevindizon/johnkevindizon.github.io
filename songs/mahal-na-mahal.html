@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Mahal Na Mahal Kita Panginoon</h1>
+  <h2>Spring Worship</h2>
+  <p>Select key:</p>
+  <pre data-key="G">
+    Intro:    
+    G   Bm7   C   C
+    
+    Verse:
+          G                    Bm7 C                          G     Bm7 C  C                    
+    Mahal na mahal kita Panginoon
+          G                    Bm7 C                 D
+    Mahal na mahal kita Panginoon
+              C                            Cm 
+    Kailanma’y ‘di kita ipagpapalit
+          Bm7              Em7        
+    ‘Pagkat sa piling Mo’y langit
+        Am7    Bm7       C                          G     Bm7 C  C                    
+    Mahal na mahal kita Panginoon
+
+    Chorus:
+                Bm7  Em7  Am7         D
+    Habangbuhay papupurihan Ka
+                Bm7  Em7  Am7             D
+    Habangbuhay maglilingkod Sa’yo
+                Bm7  Em7  Am7                      D
+    Habangbuhay pag-ibig ko Sa’yo iaalay
+
+    Ending:
+        Am7    Bm7       C                          
+    Mahal na mahal kita Panginoon
+        Am7    Bm7       C                          
+    Mahal na mahal kita Panginoon
+        Am7    Bm7       C  D                        G  
+    Mahal na mahal kita Panginoon
+
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

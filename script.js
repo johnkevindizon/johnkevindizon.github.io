@@ -126,40 +126,46 @@ searchInputSet.addEventListener("input", function() {
 
 
 
-//DROPDOWN FOR SUBLINK1
-var SublinkdropdownContent1 = document.getElementById("sublink-content1");
-var SublinkdropdownToggle1 = document.getElementById("setlist-sublink-toggle1");
-SublinkdropdownToggle1.addEventListener("click", function(event) {
-  event.stopPropagation();
-  SublinkdropdownContent1.classList.toggle("show");
-});
-SublinkdropdownContent1.addEventListener("click", function(event) {
-  event.stopPropagation();
-});
-window.addEventListener("click", function(event) {
-  if (!event.target.matches("#setlist-sublink-toggle1")) {
-    if (SublinkdropdownContent1.classList.contains("show")) {
-      SublinkdropdownContent1.classList.remove("show");
+// SORTS THE SONGS ALPHABETICALLY
+function sortSongListAlphabetically() {
+  var songList = document.getElementById("Nsonglists");
+  var songs = Array.from(songList.children);
+  songs.sort(function (a, b) {
+    var textA = a.textContent.trim().toLowerCase();
+    var textB = b.textContent.trim().toLowerCase();
+    return textA.localeCompare(textB);
+  });
+
+  songs.forEach(function (song) {
+    songList.appendChild(song);
+  });
+}
+sortSongListAlphabetically();
+
+
+
+// UNIVERSAL SUBLINK
+function initializeSublinkDropdown(toggleId, contentId) {
+  var dropdownContent = document.getElementById(contentId);
+  var dropdownToggle = document.getElementById(toggleId);
+
+  dropdownToggle.addEventListener("click", function(event) {
+    event.stopPropagation();
+    dropdownContent.classList.toggle("show");
+  });
+
+  dropdownContent.addEventListener("click", function(event) {
+    event.stopPropagation();
+  });
+
+  window.addEventListener("click", function(event) {
+    if (!event.target.matches("#" + toggleId)) {
+      if (dropdownContent.classList.contains("show")) {
+        dropdownContent.classList.remove("show");
+      }
     }
-  }
-});
-
-
-//DROPDOWN FOR SUBLINK2
-var SublinkdropdownContent2 = document.getElementById("sublink-content2");
-var SublinkdropdownToggle2 = document.getElementById("setlist-sublink-toggle2");
-SublinkdropdownToggle2.addEventListener("click", function(event) {
-  event.stopPropagation();
-  SublinkdropdownContent2.classList.toggle("show");
-});
-SublinkdropdownContent2.addEventListener("click", function(event) {
-  event.stopPropagation();
-});
-window.addEventListener("click", function(event) {
-  if (!event.target.matches("#setlist-sublink-toggle2")) {
-    if (SublinkdropdownContent2.classList.contains("show")) {
-      SublinkdropdownContent2.classList.remove("show");
-    }
-  }
-});
-
+  });
+}
+initializeSublinkDropdown("setlist-sublink-toggle1", "sublink-content1");
+initializeSublinkDropdown("setlist-sublink-toggle2", "sublink-content2");
+initializeSublinkDropdown("setlist-sublink-toggle3", "sublink-content3");
