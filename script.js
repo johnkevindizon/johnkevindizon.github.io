@@ -169,3 +169,4 @@ function initializeSublinkDropdown(toggleId, contentId) {
 initializeSublinkDropdown("setlist-sublink-toggle1", "sublink-content1");
 initializeSublinkDropdown("setlist-sublink-toggle2", "sublink-content2");
 initializeSublinkDropdown("setlist-sublink-toggle3", "sublink-content3");
+initializeSublinkDropdown("setlist-sublink-toggle4", "sublink-content4");
