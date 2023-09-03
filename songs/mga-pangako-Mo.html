@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Mga Pangako Mo</h1>
+  <h2>Faith Music Manila</h2>
+  <p>Select key:</p>
+  <pre data-key="G">
+    Intro:   	
+    G  D  Em  C 
+
+    Verse 1:
+    G                D
+    Sa ‘Yo umaasa
+        Em                               C
+    Kaibigang tapat at sandigan
+    G                    D
+    Sa ’Yo nagmumula
+        Em              C
+    Kapayapaan, kabutihan
+
+    Pre-Chorus:
+    Am                  C
+    Di kayang sukatin
+    Am          D
+    Ang pag-ibig Mo
+
+    Chorus:
+                                G
+    Mga pangako Mo
+                                  D
+    Liwanag at gabay
+                          Am
+    Sa bawat sandali
+                  Bm             C
+    May pag-asa’t kanlungan
+                                  G
+    Mga pangako Mo
+                                  D
+    Taglay nito’y galak
+    Am               Bm                      C
+    Nananatili ang labis na kalakasan
+                                G (Do Intro)
+    Mga pangako Mo
+
+    Verse 2:
+    G                          D
+    Ako’y lumalapit
+    Em
+    Sa ‘Yong kagandahan
+          C
+    Walang alinlangan
+    G                            D
+    Ikaw ang Pag-ibig
+        Em                           C
+    Kapahingahan, walang hanggan
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

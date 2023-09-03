@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Sabik Sa Presensiya Mo</h1>
+  <h2>Jesus One Generation</h2>
+  <p>Select key:</p>
+  <pre data-key="A">
+    Intro:   
+    A   E   F#m   D
+
+    Verse:
+    A	       E		  F#m	     D 
+    Ako ay narito ngayon naghihintay
+    A	           E		   F#m	            D
+    Inaasam-asam presensya Mo’y muling maranasan
+    A	        E	             F#m         D
+    Ako ay narito ngayon nananabik
+    A	           E	          F#m                E
+    Nananabik na makita luwalhati ng Iyong mukha
+    
+    Verse***
+  
+    Chorus: 
+        A		    E           A  	            E
+    Sumasayaw na nga, Sa galak tumatawa
+        D	           A	          D	           E
+    Nananabik na makita muli mong pagbisita
+    A                           E            A                          E
+    Panginoong Hesus… Malayang malaya Ka
+      D                          A               Bm   	      E   
+    Baguhin Mo ang buhay ko Ito’y Iyong Iyo
+
+    Intro***
+    Verse***
+    Chorus***
+
+
+
+
+
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

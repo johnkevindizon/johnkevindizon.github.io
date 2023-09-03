@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Hesus Ikaw ang Number One</h1>
+  <h2>Faith Music Manila</h2>
+  <p>Select key:</p>
+  <pre data-key="G">
+    Intro:   	
+    G   Em   C   D
+    Bm7   Em   C   D
+
+    Chorus:
+    G            Em           C                D
+    Ikaw lamang ang pupurihin ko
+    Bm7      Em           C                 D
+    Ikaw lamang ang sasambahin ko
+          C            Bm7           C              Bm7           
+    Panginoong hesus ikaw ang buhay ko
+          Am7        C                D         D
+    Pag-ibig mo'y tunay at totoo
+    G            Em           C                D
+    Sa aking buhay ikaw ang number one
+    Bm7      Em           C                 D
+    Sa aking puso you're the only one
+          C            Bm7                 C              Bm7           
+    Problema may dumating, Magtitiwala sa'yo
+          Am7                       D        G   G
+    Mga salita mo ay di nagbabago
+
+    Verse1:
+        C                                              G               G
+    Pangamba ko'y nawawala sa piling mo
+        C                                              G               G
+    Kapayapaan ang nadarama sa puso ko
+        C                             Bm7                     Em         
+    Mga pangako mo'y panghahawakan ko
+        F                   C                        D        D
+    Walang ibang Diyos na tulad mo
+
+    Chorus***(
+
+    Verse2:
+        C                             G            G
+    Ako ay tinulad mo sa agila
+        C                             G            G
+    Lilipad ng lilipad sa presensya mo
+        C                      Bm7           Em         
+    Kagalakan mo ay kalakasan ko
+        F                   C                        D        D
+    Ang buhay kong ito'y alay sa'yo
+
+    Outro:
+          C            Bm7                 C              Bm7           
+    Problema may dumating, Magtitiwala sa'yo
+          Am7                       D            G
+    Mga salita mo ay di nagbabago
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
