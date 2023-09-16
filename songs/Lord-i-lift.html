@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Lord I Lift Your Name On High</h1>
+  <h2>Mercy Me</h2>
+  <p>Select key:</p>
+  <pre data-key="G">
+    Intro:  
+    G   C   D   C 
+    Verse:
+    G        C                         D            C
+    Lord I lift Your name on high
+    G        C                         D            C
+    Lord I love to sing Your praises
+    G        C                         D            C
+    I'm so glad You're in my life
+    G        C                         D            C
+    I'm so glad You came to save us
+
+
+    Chorus:
+    G                         C                      D          
+    You came from heaven to earth
+        C                         G
+    To show the way
+    G                C                         D        
+    From the earth to the cross
+          C                   G
+    My debt to pay
+    G               C                         D           
+    From the cross to the grave
+                    Em7    D          Am7           
+    From the grave to the sky
+              D                                  G   C   D   C
+    Lord I lift Your name on high
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

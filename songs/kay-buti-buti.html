@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Kay Buti-Buti Mo Panginoon</h1>
+  <h2>Rommel Guevarra</h2>
+  <p>Select key:</p>
+  <pre data-key="D">
+    Intro:   	
+    D
+
+    Verse:
+          D           A/C#                Bm7
+    Kay buti-buti mo, Panginoon
+        G                            A
+    Sa lahat ng oras, sa bawat araw
+      D              A/C#                Bm7
+    Ika'y laging tapat kung magmahal
+                G                                  A
+    Ang iyong kaawaan ay magpawalang hanggan
+
+
+
+    Chorus:
+                G        A               D
+    Pinupuri't sinasamba kita
+                    G        A               D   D7
+    Dakilang Diyos at Panginoon
+                G                                   A 
+    Tunay ngang ika'y walang katulad
+                F#m7                 Bm7 
+    Tunay ngang ika'y di nagbabago
+              G                              A                                D
+    Mabuti ang Diyos na sa ami'y nagmamahal 
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

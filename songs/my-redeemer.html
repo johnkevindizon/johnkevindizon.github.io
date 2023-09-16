@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>My Redeemer Lives</h1>
+  <h2>Hillsong</h2>
+  <p>Select key:</p>
+  <pre data-key="G">
+    Intro:    
+    G   C
+
+    Verse:
+    G               C
+    I know he rescued my soul
+    G                      C
+    His blood has covered my sin
+                    G     C
+    I believe
+        G     C
+    I believe
+
+    G                         C
+    My shame He's taken away
+    G                C
+    My pain is healed in his name
+                    G     C
+    I believe
+                    G     C
+    I believe
+
+    Pre - Chorus:   
+    D               C
+    I'll raise a banner
+    D                                 C                         D
+    'Cause My Lord has conquered the grave
+
+    Chorus:
+
+              G 	  C    
+    My Redeemer Lives
+              Em 	  D    
+    My Redeemer Lives
+              G 	  C    
+    My Redeemer Lives      
+              Em 	  D    
+    My Redeemer Lives
+    
+    Intro***
+
+    Bridge:
+    F
+    You Lift my burdens
+    C
+    I'll rise with You
+          Am7      Bm7     D                Bm7   Am7        Bm7
+    I'm dancing on this mountain top to see your kingdom
+    Dsus2  D
+    come
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

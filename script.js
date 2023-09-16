@@ -171,3 +171,8 @@ initializeSublinkDropdown("setlist-sublink-toggle2", "sublink-content2");
 initializeSublinkDropdown("setlist-sublink-toggle3", "sublink-content3");
 initializeSublinkDropdown("setlist-sublink-toggle4", "sublink-content4");
 initializeSublinkDropdown("setlist-sublink-toggle5", "sublink-content5");
+initializeSublinkDropdown("setlist-sublink-toggle6", "sublink-content6");
+initializeSublinkDropdown("setlist-sublink-toggle7", "sublink-content7");
+initializeSublinkDropdown("setlist-sublink-toggle8", "sublink-content8");
+initializeSublinkDropdown("setlist-sublink-toggle9", "sublink-content9");
+initializeSublinkDropdown("setlist-sublink-toggle10", "sublink-content10");

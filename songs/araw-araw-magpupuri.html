@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Araw-araw Magpupuri</h1>
+  <h2>Malayang Pilipino</h2>
+  <p>Select key:</p>
+  <pre data-key="A">
+    Intro:  
+    A   F#m   D   Bm   C#m7   D   E
+
+    Verse1:
+                A                    	C#m7	      
+    O kay sarap talagang magpuri
+        D                      A
+    sa Iyo Panginoon
+    D                    C#m7    F#m7
+    di na kayang pigilin pa
+    Bm                                     E    D   E
+    pagdiriwang na nadarama
+
+    Verse2:
+                A                    	C#m7	      
+    Ikaw lang ang siyang dahilan
+        D                      A
+    kaya ang puso ko'y puno ng sigla
+    D                    C#m7    F#m7
+    sa Iyo ako ay await
+    Bm                                     E    D   E
+    ng papuri't pagsamba
+
+    Chorus:
+    D                         C#m7  F#m7
+    Araw-araw magpupuri
+    Bm7                           A
+    Araw-araw ako ay sasamba
+    D                         C#m7  F#m7
+    Walang papantay sa pag-ibig mo
+    Bm7                       E    A
+    Ikaw lang ang buhay ko 
+
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

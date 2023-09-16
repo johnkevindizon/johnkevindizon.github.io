@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Langit Ang Aking Nadarama</h1>
+  <h2>Malayang Pilipino</h2>
+  <p>Select key:</p>
+  <pre data-key="A">
+    Intro:   
+    A   G
+    A   G
+    A   G   E 
+
+    Verse:
+                A		        C#m7
+    Ang kailangan ko ay ang pag-ibig mo
+        Bm7		   E
+    O Diyos sa buhay kong ito
+                    A	                 C#m7
+    Ang kagalakan mo ay kalakasan ko
+        Bm7		   E
+    Ikaw ang nais ko
+
+    Pre-Chorus:
+              D                            C#m7
+    Ikaw lamang ang pupurihin
+                Bm7                E
+    Ang pangalan mo’y dadakilain
+              D                            C#m7
+    Wala na sayo’y maihahambing
+                Bm7                Esus4  E
+    Ang awit ko’y iyong dinggin
+
+    Chorus:
+    A	       C#m7            Bm7
+    Langit ang aking nadarama
+        E
+    Sa twing kapiling ka
+    A	   C#m7            Bm7
+    Ang puso ko’y sumisigla
+                    E
+    Kapag sayo’y sumsamba       
+
+    Outro:    
+    A  C#m7  Bm7  E
+    Kapag sayo’y sumsamba       
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
