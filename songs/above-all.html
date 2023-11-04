@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Above All</h1>
+  <h2>Lenny Leblanc</h2>
+  <p>Select key:</p>
+  <pre data-key="G">
+    Intro:  
+    G  Bm7  C  D  G
+
+    Verse1:
+                      C	  D                                
+    Above all powers
+        G   
+    Above all kings
+                      C	  D                                
+    Above all nature
+                    G   
+    And all created things
+        D/F#    Em
+    Above all wisdom
+            D                         C     G/B
+    And all the ways of man
+    Am7        
+    You were here
+        G                         D/F#
+    Before the world began
+    Verse2:
+    G/B          C	      D        
+    Above all kingdoms
+      G   
+    Above all thrones
+    G/B          C	      D        
+    Above all wonders
+                    G   
+    The world has ever known
+      D/F#      Em
+    Above all wealth
+            D                         C     G/B
+    And treasures of the earth
+    Am7                         G                        
+    There's no way to measure
+              B7
+    What You're worth
+
+    Chorus:
+    G       Am7  D/F#                 G
+    Crucified, Laid behind a stone
+    G       Am7  D/F#                 G
+    You lived to die, Rejected and alone
+    D/F#   Em    D                            C        G/B
+    Like a rose, Trampled on the ground
+                            Am7   G/B                  C    D
+    You took the fall, And thought of me
+      G
+    Above all
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

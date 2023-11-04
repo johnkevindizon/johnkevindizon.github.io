@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Jesus Paid it All</h1>
+  <h2>Worship Circle</h2>
+  <p>Select key:</p>
+  <pre data-key="C">
+    Intro:
+    Capo 6th 
+    C   F    Dm7   F
+    Verse1:
+    C          
+    I hear the Savior say
+              G                                  C
+    Thy strength indeed is small
+                  Am                                 F
+    Child of weakness, watch and pray
+                C               G        C
+    Find in Me thine all in all
+    Chorus:
+    C                     Am
+    Jesus paid it all
+    Em7              G
+    All to Him I owe
+    C/E                   F          
+    Sin had left a crimson stain
+          C                G             C
+    He washed it white as snow
+    Verse2:
+    Lord, now indeed I find
+    Thy power and Thine alone
+    Can change the leper's spots
+    And melt the heart of stone
+
+    Verse3:
+    And when before the throne
+    I stand in Him complete
+    Jesus died, my soul to save
+    My lips shall still repeat
+
+    Bridge:
+          C                                  F       
+    Oh, praise the One who paid my debt
+            Dm7                           F
+    And raised this life up from the dead
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
