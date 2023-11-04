@@ -13,7 +13,7 @@
     $.fn.transpose = function(options) {
       var opts = $.extend({}, $.fn.transpose.defaults, options);
       
-      var currentKey = null;
+      var currentKey = null; 
       
       var keys = [
         { name: 'Ab',  value: 0,   type: 'F' },
@@ -243,6 +243,22 @@
       chordRegex: /^[A-G][b\#]?(2|4|5|6|7|9|11|13|6\/9|7\-5|7\-9|7\#5|7\#9|7\+5|7\+9|b5|#5|#9|7b5|7b9|7sus2|7sus4|add2|add4|add9|aug|dim|dim7|m\/maj7|m6|m7|m7b5|m9|m11|m13|M7|M9|M11|M13|mb5|m|sus|sus2|sus4)*(\/[A-G][b\#]*)*$/,
   chordReplaceRegex: /([A-G][b\#]?(2|4|5|6|7|9|11|13|6\/9|7\-5|7\-9|7\#5|7\#9|7\+5|7\+9|b5|#5|#9|7b5|7b9|7sus2|7sus4|add2|add4|add9|aug|dim|dim7|m\/maj7|m6|m7|m7b5|m9|m11|m13|maj7|maj9|maj11|maj13|M7|M9|M11|M13|mb5|m|sus|sus2|sus4)*)/g
     };
-  
+
   })(jQuery);
   
+  $(document).ready(function() {
+    // Font size control
+    var preElement = $("pre");
+    var currentFontSize = 13; // Default font size
+    var fontChangeStep = 2; // You can adjust the step size as needed
+
+    $("#increase-font").click(function() {
+        currentFontSize += fontChangeStep;
+        preElement.css("font-size", currentFontSize + "px");
+    });
+
+    $("#decrease-font").click(function() {
+        currentFontSize -= fontChangeStep;
+        preElement.css("font-size", currentFontSize + "px");
+    });
+});
