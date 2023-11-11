@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Draw Me Close</h1>
+  <h2>Maranatha</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="G">
+    Intro:
+    G   D/F#   C   G 
+
+    Verse:
+    G                             C         D/F#
+    Draw me close to You
+                          G         D/F#
+    Never let me go
+            C                   Em
+    I lay it all down again
+                            D          C                              D
+    To hear You say that I'm Your friend 
+
+    G                             C    D/F#                 
+    You are my desire
+                              G         D/F#
+    No one else will do
+                                                    C                      Em
+    'Cause nothing else can take Your place
+                                    D       C                          D
+    To feel the warmth of Your embrace
+    G                                C   D                                 G        C/E   D/F#                     
+    Help me find the way, bring me back to You
+
+    Chorus:
+    G        D/F#     C       D
+    You're all I want
+    G        D/F#     C        D
+    You're all I've ever needed
+    G        D/F#     C       D
+    You're all I want  
+    C                           D                  G    C     D 
+    Help me know You are near
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

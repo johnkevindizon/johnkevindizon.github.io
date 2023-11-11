@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Halina`t Sama-sama</h1>
+  <h2>Musikatha</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="E">
+    Intro:   
+    E   G#m7   A   B
+
+    Verse:
+    E                        G#m7   
+    Halina't sama-sama
+    A                     B
+    Purihin natin siya
+    E                        G#m7   
+    Halina't sama-sama
+    A                     B
+    Awitan natin siya
+
+    Refrain:
+    A                            G#m7
+    Ipalakpak ang inyong kamay
+    A           G#m7
+    Itaas at ikaway
+
+    F#m7                     B                              E   G#m7   A   B
+    Lahat ay magsabing Diyos ay buhay
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

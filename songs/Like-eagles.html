@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Like Eagles</h1>
+  <h2>Don Moen</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="F">
+    Intro:    
+    F   Fsus2  Bb
+
+    Verse:
+    F             C                              Gm
+    O my soul, do you not know?
+                                      C
+    Have you not heard?
+                    F                             Dm
+    It's been told from the beginning
+            Gm                           C 
+    The Lord your God is on your side
+
+    F              C                           Gm
+    O my soul, don't be afraid
+                              C
+    Hope in the Lord
+                F                               Dm
+    By His righteousness and power
+                Gm                           C
+    He will strengthen, He will guide
+
+    Chorus:
+
+                    F                    Dm
+    And I will soar on wings like eagles
+    Gm                     C            
+    Held by the hand of God
+              F/A                 Dm
+    I will run and not grow tired
+              Gm                     C            
+    When on His name I call
+
+                    F                    Dm
+    For the Lord is never weary
+            Gm                     C            
+    His ways are beyond my thoughts
+            Dm        Gm     
+    I will trust in Him
+              C          F
+    With all my heart 
+    Intro***
+    Verse***
+    Chorus***
+
+          Bb
+    And I will rest upon His promise
+    Patiently I'll wait
+
+    Intro***
+    Chorus***
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

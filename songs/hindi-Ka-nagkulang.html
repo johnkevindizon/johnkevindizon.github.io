@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Hindi Ka Nagkulang</h1>
+  <h2>His Life</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="D">
+    Intro:  	
+    D   G   F#m7   Em7   Asus
+
+    Verse1:
+    D            
+    Ikaw lang ang pag-asa ko
+    Dmaj7                                           G        F#m7
+    Tanging Ikaw ang buhay ko Hesus
+        Em          
+    Kahit ako'y nangangamba
+          Em                  A                 D                 A 
+    Basta't Ikaw ang kasama panatag na
+
+    Verse2:
+    D            
+    Ikaw lang ang sasambahin
+    Dmaj7                                           G        F#m7
+    Paligid man ay magdilim Hesus
+        Em          
+    Kahit may suliranin man
+          Em          A         D                       D7    
+    Lagi kang aawitan Ikaw lamang
+
+    Chorus:
+                    G   A/G          F#m7  Bm7         
+    Kahit kailan di Ka nagkulang
+                Em        A               D    D7
+    Biyaya Mo sa akin laging laan
+                            G   A/G         F#m7                   Bm7         
+    Ang pag-ibig Mo sa'kin walang hanggan
+              Em              A               D
+    Inibig Mo ako noon paman
+
+
+    Bridge2x:
+                    G       A/G               F#m7                Bm7         
+    Panginoon dakila Ka tapat sa dalangin ko
+      Em              A               D                D7
+    Ako'y inibig Mo kahit ako ay ganito
+          G                   A/G                   F#m7       Bm7         
+    Walang katapusan ang pagmamahal Mo
+    Em                  A                   D             D7
+    Walang pinipili ang puso Mo
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
