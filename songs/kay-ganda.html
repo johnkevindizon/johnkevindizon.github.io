@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Kay Ganda ng Umaga</h1>
+  <h2>Boy Baldomoro</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="D">
+    Intro:
+    D   Em7   A   D 
+    Bm7   E   A   D
+
+    Chorus:
+    D    	             Em7
+    Kay ganda ng umaga
+                    A    	                                 D
+    Sa piling ng ating Amang mapagpala
+    Bm7    	             E
+    Kay ganda ng umaga
+        A    	                                         D
+    Sa piling ng Diyos na mapagpala
+
+    Verse1:
+    A                                                         D
+    Kabutihan Nya'y hindi nagbabago
+    A                                                         D
+    Mga pangako Nya satin ay totoo
+    Gm                                                        
+    'Di dapat mangamba
+    F#m                           B7
+    Pagkat kasama Sya
+    E                           A
+    Halina't purihin Sya
+
+    Intrumental:   	
+    D   Em7   A   D 
+    Bm7   E   A   D   E
+
+    Chorus:
+    E    	             F#m7
+    Kay ganda ng umaga
+                    B    	                                 E
+    Sa piling ng ating Amang mapagpala
+    C#m7    	             F#
+    Kay ganda ng umaga
+        B    	                                         E
+    Sa piling ng Diyos na mapagpala
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
