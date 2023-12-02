@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Karapat-dapat</h1>
+  <h2>Hope Filipino Worship</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="B">
+    Intro:  
+    B   Bb/F#   
+    B   Bb/F#   
+    G#m7   Bb/F#   B   C#
+
+    Verse1:
+                  F#              Bb/F#   
+    Dinggin mo aming Ama
+                B                                C#
+    Itong dalangin na aming inaalay
+                  F#              Bb/F#   
+    Pawiin mo ang pusong pagal
+                B                                C#
+    Yakapin Mo kami ng 'Yong pagmamahal
+
+    Pre-Chorus:
+            Ebm7
+    Di akalaing
+              Bbm7 
+    Tulad ko'y mamahalin
+                        B                  
+    Ngunit pag-ibig na wagas
+                          C#
+    Ang Iyong hatid
+
+    Chorus:
+        B                            Bb/F#   
+    Hindi kami karapat dapat
+        B                            Bb/F#        Ebm7
+    Ngunit buhay Mo ay Iyong inalay
+            G#m7   
+    Sa kabila ng lahat
+    Bb/F#   
+    Iyong tinanggap
+                    B                               C#
+    Tinawag Mo kaming Iyong anak
+    Intro***  
+
+    Verse2:
+                      B                        Bb/F#   
+    Di masusukat di nagkukulang
+                    B                                         C#
+    Pag-ibig mo'y sapat sa'min kaylanpaman
+                B            Bb/F#   
+    Lumalabis umaapaw
+                    B                                             C#
+    Kagandahang loob na sa'mi'y nagligtas
+    Interlude:  
+    B   Ebm7   Bbm7   
+    B   Ebm7   Bbm7   
+    G#m7   Bb/F#    B    C#   
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
