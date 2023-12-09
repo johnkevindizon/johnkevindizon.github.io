@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>For the Lord is My Towe(Medley)</h1>
+  <h2>Steve Kuban</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="G">
+    Intro:  
+    G   C   G   D   G 
+    For the Lord is my tower
+                        C
+    And He gives me the power
+            G                       D
+    To tear down the works of the enemy
+                    G
+    In a difficult hour
+                        C
+    He will crush the devourer
+                  G
+    And bring the power of darkness
+      D           G    D
+    Underneath my feet
+
+    G
+    Blessed be the name of the Lord
+    C		                     D
+    Blessed be the name of the Lord
+    Bm7				            D
+    Blessed be the name of the Lord most high
+
+          G
+    The name of the Lord is a Strong Tower
+            C      D
+    The righteous run into it
+            G
+    And they are saved
+          
+          G                                       Em                                 
+    My Life Is In You, Lord, My Strength Is In You, Lord
+          C                                        G
+    My Hope Is In You, Lord, In You, It’s In You
+      
+              C		           D               G  
+    I will praise You with all of my heart.
+              C                          D                 G
+    I will praise You with all of my Strength
+              D              G             E               Am7
+    With all of my life, and all of my strength.
+    F	                     D
+    All of my hope is in You
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

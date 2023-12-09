@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Healer</h1>
+  <h2>Hillsong</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="B">
+    Intro:  
+    B   E   G#m7   E
+
+    Verse1:
+            B                            
+    You hold my every moment
+            E             F#         B
+    You calm my raging seas
+            B                    B/A#       G##m7
+    You walk with me through fire
+            E                    F#
+    And heal all my disease
+
+    Pre-Chorus
+      C#m  B/D#  E
+    I trust in You
+      C#m  E   F#
+    I trust in You
+
+    Chorus:
+    B       
+    I believe You're my healer
+    G#m7                    F#   E
+    I believe You are all I need
+    B       
+    I believe You're my portion
+    G#m7                                                           E      F#    
+    I believe You're more than enough for me
+    G#m7  B/A#          B   E   G#m7   E
+    Jesus, You're all I need 
+
+    Bridge:
+    G#m7        B/A#    B                   
+    Nothing is impossible for You
+    G#m7        B/A#    B                   
+    Nothing is impossible
+    G#m7        B/A#    B                   
+    Nothing is impossible for You
+    E                               G#m7
+    You hold my world in Your hands
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
