@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Dakilang Katapatan</h1>
+  <h2>Boy Baldomoro</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="C">
+    Intro:  
+    C   G/B   Am   G
+    F   D/F#   G 
+
+    Verse1:
+          C               G/B       Am                 G              	                                              
+    Sadyang kay buti ng ating Panginoon
+            F        		       Em - Am
+    Magtatapat sa habang panahon
+      F                      E          Am        G    D/F#
+    Maging sa kabila ng aking pagkukulang
+        F          		G
+    Biyaya nya'y patuloy na laan
+
+    Verse2:
+        C      G/B               Am                 G              	                                              
+    Katulad ng pagsinag ng gintong araw
+        F        		           Em - Am
+    Patuloy syang nagbibigay tanglaw
+      F         E                        Am    G   D/F#
+    Kaya sa puso ko't damdamin
+        Dm7        Em7   F            D/F#  Gsus2 G
+    Katapatan nya'y aking pupurihin
+
+    Chorus:
+        C       C/E      
+    Dakila ka O Diyos
+        F                                  Em
+    Tapat ka ngang tunay
+            Dm7                G                       C    C7
+    magmula pa sa ugat ng aming lahi
+            F                         Fsus2        Em                  Am 
+    Mundo'y magunaw man maaasahan kang lagi
+    Dm7		          G                   C 
+    Maging hangang wakas nitong buhay
+    
+    Intro***  
+
+    Verse3:
+    C           G/B               Am             G              	                                              
+    Kaya O Diyos ika'y aking pupurihin
+          F                                            Em - Am
+    Sa buong mundo'y aking aawitin
+        F               E             Am  G    D/F#
+    Dakila ang iyong katapatan
+        Dm7        Em7   F            D/F#  Gsus2  G
+    Pag-ibig mo'y walang hangan
+
+    Chorus:
+        C       C/E      
+    Dakila ka O Diyos
+        F                                  Em
+    Tapat ka ngang tunay
+            Dm7                G                       C    C7
+    magmula pa sa ugat ng aming lahi
+            F                         Fsus2        Em                  Am 
+    Mundo'y magunaw man maaasahan kang lagi
+    Dm7		          G                   C 
+    Maging hangang wakas nitong buhay
+
+    C         C/E      
+    Dakila ka O Diyos
+        F                                  Em
+    Sa habang panahon
+          Dm7                  G                   C    C7
+    Katapatan mo'y matibay na sandigan
+            F              Fsus2                 Em                  Am 
+    Sa bawat pighati tagumpa'y man ay naroon
+            F             Fsus2                Em                  Am 
+    Daluyan ng pag asa kung kailanga'y hinahon
+            F            Fsus2                 Em                  Am 
+    Pagibig mo'y alay sa amin noon hangang ngayon
+    Dm7 Em  F      Em
+    Dakila ka
+    Dm7  Em F G  F     
+    Dakila ka O Diyos
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
