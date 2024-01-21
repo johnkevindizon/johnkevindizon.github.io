@@ -166,15 +166,19 @@ function initializeSublinkDropdown(toggleId, contentId) {
     }
   });
 }
-initializeSublinkDropdown("setlist-sublink-toggle1", "sublink-content1");
-initializeSublinkDropdown("setlist-sublink-toggle2", "sublink-content2");
-initializeSublinkDropdown("setlist-sublink-toggle3", "sublink-content3");
-initializeSublinkDropdown("setlist-sublink-toggle4", "sublink-content4");
-initializeSublinkDropdown("setlist-sublink-toggle5", "sublink-content5");
-initializeSublinkDropdown("setlist-sublink-toggle6", "sublink-content6");
-initializeSublinkDropdown("setlist-sublink-toggle7", "sublink-content7");
-initializeSublinkDropdown("setlist-sublink-toggle8", "sublink-content8");
-initializeSublinkDropdown("setlist-sublink-toggle9", "sublink-content9");
-initializeSublinkDropdown("setlist-sublink-toggle10", "sublink-content10");
-initializeSublinkDropdown("setlist-sublink-toggle11", "sublink-content11");
-initializeSublinkDropdown("setlist-sublink-toggle13", "sublink-content13");
+initializeSublinkDropdown("setlist-sublink-toggle3rdPagkaFell", "sublink-content3rdPagkaFell");
+initializeSublinkDropdown("setlist-sublink-toggleS81", "sublink-contentS81");
+initializeSublinkDropdown("setlist-sublink-toggleS82", "sublink-contentS82");
+initializeSublinkDropdown("setlist-sublink-toggleS83", "sublink-contentS83");
+initializeSublinkDropdown("setlist-sublink-toggleS84", "sublink-contentS84");
+initializeSublinkDropdown("setlist-sublink-toggleS85", "sublink-contentS85");
+initializeSublinkDropdown("setlist-sublink-toggleS86", "sublink-contentS86");
+initializeSublinkDropdown("setlist-sublink-toggleS87", "sublink-contentS87");
+initializeSublinkDropdown("setlist-sublink-toggleS92", "sublink-contentS92");
+initializeSublinkDropdown("setlist-sublink-toggleS93", "sublink-contentS93");
+initializeSublinkDropdown("setlist-sublink-toggleS96", "sublink-contentS96");
+initializeSublinkDropdown("setlist-sublink-toggleS100", "sublink-contentS100");
+initializeSublinkDropdown("setlist-sublink-toggleS101", "sublink-contentS101");
+initializeSublinkDropdown("setlist-sublink-toggleS102", "sublink-contentS102");
+initializeSublinkDropdown("setlist-sublink-toggleS103", "sublink-contentS103");
+initializeSublinkDropdown("setlist-sublink-toggleS104", "sublink-contentS104");

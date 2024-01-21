@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Days of Elijah</h1>
+  <h2>Robin Mark</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="A">
+    Intro:    
+    A   D   A   E
+    
+    Verse1:
+    A                                      D   
+    These are the days of Elijah
+    A                      E                    A
+    Declaring the word of the Lord
+    A                                                      D   
+    And these are the days of Your servant Moses
+    A                        E                     A
+    Righteousness being restored
+          C#m                                         F#m7
+    And though these are days of great trial
+        Bm7              D                      E
+    Of famine and darkness and sword
+    A                                                 D   
+    Still, we are the voice in the desert crying
+    A                            E                  A
+    "Prepare ye the way of the Lord!"
+
+    Chorus:
+                        A                                  D
+    Behold, He comes riding on the clouds
+                                A                                  E
+    Shining like the sun at the trumpet call
+                    A                                   D
+    Lift your voice, the year of jubilee
+                                  A           E          A
+    And out of Zion's hill, salvation comes
+
+    Turn:    
+    A   D   A   E
+
+    Verse2:
+            A                                      D
+    And these are the days of Ezekiel
+            A                    E                    D
+    The dry bones becoming as flesh
+            A                                             D
+    And these are the days of Your servant David
+        A                E                 A
+    Rebuilding a temple of praise
+            C#m                                     F#m7
+    Oh, these are the days of the harvest
+                  Bm7              D                      E    
+    For the fields are as white in Your world
+            A                                                 D   
+    And we are the laborers in Your vineyard
+    A                      E                     A
+    Declaring the word of the Lord!
+
+    Chorus2x***
+    
+    Bridge:    
+              A                      G                 D        A
+    Who was and who is and who is, to come
+              A                      G                 D        A
+    Who was and who is and who is, to come
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Salamat Salamat</h1>
+  <h2>Malayang Pilipino</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="F">
+    Intro:    
+    F  Am7  Gm7  C 
+    F  Am7  Gm7  C 
+    Verse1:
+    F                                Am7                   Gm7
+    Kung aking mamasdan ang kalawakan
+                        C
+    Hindi ko maunawaan
+    F                      Am7                       Gm7
+    Ang Iyong dahilan kung bakit ako’y
+                          C 
+    Pinili Mo’t inalagaan
+
+    Pre-Chorus:
+    Am7
+    ‘Di ko kayang isipin
+                      Am7                 Dm7
+    Hinding-hindi ko kayang sukatin
+    Gm7               Am7    
+    Ang pag-ibig Mo Hesus
+          Bb                         C
+    Na Iyong binigay sa akin
+
+    Chorus:
+    Bb               C/Bb        Am7                      Dm7     
+    Salamat salamat O Hesus sa pag-ibig Mo
+    Gm7                                 C                        F           F7
+    Walang ibang nagmahal sa akin ng katulad Mo
+    Bb               C/Bb        Am7                      Dm7     
+    Salamat salamat O Hesus sa pag-ibig Mo
+    Gm7                    C                        F           F7
+    Ako’y magsasaya sa piling Mo
+
+    Verse2:
+    F                                    Am7                Gm7
+    Kung may pagsubok man o kagipitan
+                          C 
+    Ako ay may lalapitan
+    F                    Am7                     Gm7
+    Ikaw Hesus ang aking sandigan
+                                  C 
+    Hindi Mo ako pababayaan
+
+    Bridge:
+    Bb                                Am7                        
+    Buhay ko na ang purihin Ka 
+    Gm7                             C                       
+    Buhay ko na ang Sa ‘Yo’y sumamba
+    Bb                              Am7                        
+    Wala ng ibang nanaisin pa 
+                  Gm7                C                       
+    Kundi pasalamatan Ka
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Thank You Lord</h1>
+  <h2>Don Moen</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="D">
+    Capo 2ND 
+    Intro:    
+    D   A   G   A  
+
+    Verse1:
+    D                                       A                         
+    I come before You today
+    Em7                                               Bm7          
+    And there's just one thing that I want to say
+    G	      A
+    Thank You Lord
+    G	      A
+    Thank You Lord
+    D                                       A                         
+    For all You've given to me
+    Em7                                    Bm7          
+    For all the blessings that I cannot see
+    G	      A
+    Thank You Lord
+    G	      A
+    Thank You Lord
+
+    Pre-Chorus:
+    D                     
+    With a grateful heart
+    A
+    With a song of praise
+    Bm7
+    With an outstretched arm
+    G
+    I will bless Your name
+
+    Chorus:
+    D                    A
+    Thank You Lord
+                          G                   A
+    I just wanna thank You Lord
+    D                    A
+    Thank You Lord
+                          G                   A
+    I just wanna thank You Lord
+    Asus2       A            D
+    Thank You Lord
+
+    Turn:    
+    D   A   G   A
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Give Thanks</h1>
+  <h2>Don Moen</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="F">
+    Intro:  	
+    F   C   Dm   Bb
+
+    Chorus:
+            F                        C 
+    Give thanks with a grateful heart   
+          Dm                     Am   
+    Give thanks to the Holy One   
+            Bb                                F                    Eb              C                                                               
+    Give thanks because He's given Jesus Christ, His Son
+
+    Verse:
+            Am               Dm               Gm 
+    And now let the weak say, "I am strong"   
+                  C7                       F
+    Let the poor say, "I am rich   
+                        Dm                            Eb             C     
+    Because of what the Lord has done for us"    
+            Am               Dm                      Gm
+    And now let the weak say, "I am strong"   
+                  C7                        F
+    Let the poor say, "I am rich   
+                        Dm                            Eb             C     
+    Because of what the Lord has done for us"  
+              F   
+    Give thanks
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

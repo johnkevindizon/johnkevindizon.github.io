@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Forever</h1>
+  <h2>Hillsong</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="D">
+    Intro:  
+    D   D/F#   G   Bm7   A 
+
+    Verse:
+    D                               
+    I'll Worship at Your Throne
+    D/F#
+    Whisper my own love song
+    G
+    With all my heart I'll sing
+    Bm7             A
+    For You my Dad and King
+    D
+    I'll live for all my days
+    D/F#
+    To Put a smile on Your face
+    G
+    And when we finally meet
+    Bm7             A
+    It'll be for eternity
+
+    Pre - Chorus:        
+            Em7             Bm7              A
+    And Oh how wide You open up Your arms
+            Em7
+    When I need Your love
+                    Bm7                  A
+    And how far You would come
+              G/B    C
+    If ever I was lost
+                  G/B                             A           
+    And You said that all You feel for me
+                G/B        C
+    Is undying love
+                Em7  D/F#  G
+    That You showed me through the cross
+
+    Chorus:
+    A
+    I'll worship You my God
+    C#m7
+    I'll worship You my God
+    D
+    I love You
+    F#m7     E
+    I love You
+    A
+    Forever I will sing
+    C#m7	        D
+    Forever I will be with You
+    F#m7      E
+    Be with You
+    Turn:    
+    D   D/F#   G   Bm7   A 
+    
+    Verse***
+    Pre – Chorus***
+    Chorus2x***
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

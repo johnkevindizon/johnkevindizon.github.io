@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>I Offer My Life</h1>
+  <h2>Don Moen</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="D">
+    Capo 3RD 
+    Intro:  
+    D   D   Bm7   Bm7
+    Em7   D/F#   G   A   A#   Bm7
+    Em7   A   D   D
+
+    Chorus:
+    D                          Bm7         
+    Lord, I offer my life to You
+                        Em7         D/F#       G                        A
+    Everything I've been through, use it for Your glory
+    D                         Bm7  
+    Lord I offer my days to You
+                      Em7         D/F#  G                  A   A#   Bm7  
+    Lifting my praise to You as a pleasing sacrifice
+    Em7             A            D
+    Lord I offer You my life
+
+    Verse1:
+    D                      G                        
+    All that I am, all that I have
+    A                                        G                 D   D/C#
+    I lay them down before You, oh Lord
+    Bm7                   G                       D/F#
+    All my regrets, all my acclaims
+          Em7                    D/F#     G                  Asus    A	
+    The joy and the pain, I'm making them Yours
+
+    Chorus***
+
+    Verse2:
+    D                               G                       
+    Things in the past, things yet unseen
+    A                                                 G                           D   D/C# Wishes and dreams that are yet to come true
+    Bm7                      G                      D/F#
+    All of my hopes, all of my plans
+          Em7                        D/F#     G           Asus   A	
+    My heart and my hands are lifted to You
+
+    Chorus2x***
+
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

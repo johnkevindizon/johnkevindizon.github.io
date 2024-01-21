@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Be Thou My Vision</h1>
+  <h2>First Worship</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="E">
+    Intro:    
+    E   E    E   E
+
+    Verse1:
+    E                                     C#m
+    Be Thou my Vision, O Lord of my heart
+    B                                           A                         B
+    Naught be all else to me, save that Thou art
+    A                                             C#m         A
+    Thou my best thought, by day or by night
+    E/G#            A                    B                      E
+    Waking or sleeping, Thy presence my light
+
+    Chorus:
+                A           E                    B                     C#m                       
+    In my darkest days be my strength and sword
+                A            E                      B              C#m        
+    Be the light of grace shining evermore
+                A               E                    B                  C#m        
+    Let my eyes see all that You have in store
+    A                                B                                 E      
+    Be Thou my Vision Be Thou my Vision, Lord
+
+    Turn:    
+    E   E    E   E
+
+    Verse2:
+    E                                            C#m
+    Be Thou my Wisdom and Thou my true Word
+    B                                   A                         B
+    I ever with Thee and Thou with me, Lord
+    A                                                C#m         A
+    Thou my great Father Thine oh may I be
+    E/G#             A                    B                  E
+    Thou in me dwelling and I one with Thee 
+    Chorus***
+    Turn:    
+    E   E    E   E
+    Verse3:
+    E                                     C#m
+    Riches I heed not nor vain empty praise
+    B                                        A                 B
+    Thou mine inheritance now and always
+    A                                         C#m           A
+    Thou and Thou only the first in my heart
+    E/G#              A                  B                        E
+    High King of heaven my treasure Thou art
+
+    EndChorus:
+
+                A           E                    B                     C#m                       
+    In my darkest days be my strength and sword
+                A            E                      B              B        
+    Be the light of grace shining evermore
+                A               E                    B                  C#m        
+    Let my eyes see all that You have in store
+    A                                B                                 A   E   B   C#m
+    Be Thou my Vision Be Thou my Vision, Lord
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>  
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

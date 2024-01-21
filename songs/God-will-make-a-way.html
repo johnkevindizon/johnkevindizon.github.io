@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>God Will Make A Way</h1>
+  <h2>Don Moen</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="F">
+    Intro:   
+    F   C/F   Bb   C
+    Chorus1:
+    F                            C                             Bb                       F
+    God will make a way where there seems to be no way.
+          Bb                             F/A              Gm                                    C                   
+    He works in ways we cannot see, He will make a way  for me.
+    F                       C                         Bb                    F
+    He will be my guide, hold me closely to His side,
+              Bb                                  F/A                    Gm                                                       
+    With love and strength for each new day, He will make a way,
+    Bb        C            F           D                      		                                                      He will make a way.
+
+    Chorus2:
+    G               D/F#            C/E            G/D
+    God will make a way where there seems to be no way.
+        C         	          G/B              Am                     D
+    He works in ways we cannot see, He will make a way  for me.
+    G                      D/F#                   C/E                   G/D
+    He will be my guide, hold me closely to His side,
+              C                                    G/B                    Am
+    With love and strength for each new day, He will make a way,
+    C           D                 G      
+    He will make   a  way.
+
+    Verse:
+            Eb                       F                           Bb  
+    By a roadway in the wilderness He'll lead      me,
+            Eb            F                         G
+    And rivers in the desert will I see.
+    C                      D/C
+    Heaven and earth will fade,
+            Bm        B/D#     Em
+    But His word will still remain;
+    C          D                                Esus4    E
+    He will do something new today.
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
