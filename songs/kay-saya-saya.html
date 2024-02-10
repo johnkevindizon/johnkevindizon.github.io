@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Kay Saya Saya</h1>
+  <h2>Faith Manila</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="A">
+    Intro:   	
+    A
+
+    Verse1:
+    A                                          D
+    Wag mag-aalala, Sa mundong ginagalawan
+            Bm7                 A/C#     D               E      
+    Ang buhay mo ngayon,     May katiyakan
+    A                                          D 
+    Wag mag-alinlangan, Tumawag sa Kanya
+    Bm7             A/C#     D               E      
+    S'ya ang kasagutan, Magpakailanman
+          
+    Chorus: 
+    A              F#m 
+    Kay saya-saya ng buhay
+        D                       E
+    Kapag kasama Ka
+    A              F#m
+    Kay ganda-ganda ng buhay
+        D                       E
+    Kapag kapiling Ka 
+    D                             E
+    Ikaw ang buhay ko
+          A                      D
+    Hindi nagbabago
+          D                       E
+    Walang katulad mo
+                      A
+    Oh Hesus
+    Verse2:
+    A                                        D
+    Ikaw ang mahalaga,  Sa buhay kong ito
+          Bm7                  A/C#   D                         E      
+    Walang pangangamba, Ikaw ang pag-asa
+        A                                              D
+    Sa'yo lang natagpuan, Tunay na kagalakan
+    Bm7            A/C#        D                           E      
+    'Di mababayaran, Ng kahit ano pa man
+
+    Chorus***
+
+    Bridge:  
+    A                  Bm7                 	
+    Kay saya-saya
+    F#m7                  E
+    Kay ganda-ganda
+    A                  Bm7                 	
+    Kay saya-saya
+    F#m7                  D
+    Kay ganda-ganda
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

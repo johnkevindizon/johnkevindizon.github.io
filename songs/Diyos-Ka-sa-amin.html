@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Diyos Ka Sa Amin</h1>
+  <h2>His Life</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="D">
+    Intro:   	
+    D   G
+
+    Verse1:
+        D                          G                   A                     D
+    O Diyos, Ikaw ang tunay na dakila sa mundo
+                      G                           A                 Bm7
+    Ikaw ang Haring nagmahal ng tulad ko
+                  A        
+    Ginawa mo’ng lahat
+            Em7           D/F#                A   
+    Pag-ibig Mo ay tapat at wagas
+
+    Verse2:
+        D                          G                   A                     D
+    O Diyos, wala ng papantay sa kabutihan Mo
+                      G                           A                 Bm7
+    Ang ngalan mo’y itataas sa buhay ko
+                A       
+    Sundin ang loob Mo
+      Em7           D/F#       A   
+    Iparinig ang nais Mo
+
+    Chorus1: 
+            D               D/F#            G       A
+    Sa lahat ng panahon, Diyos ka sa amin
+            D            D/F#        G           A
+    Sa lahat ng oras, nariyan para samin
+      Bm7             A          G       D/F#
+    Panginoong Hesus, purihin ka!
+          Em7           D/F#    A
+    Dakilain Ka sa buhay ko 
+
+    Verse3:
+        D                          G                   A                     D
+    O Diyos, Ikaw ang tunay na Dakila sa mundo                  G                           A                 Bm7
+    Ikaw ang Haring nagmahal ng tulad ko
+                  A        
+    Sundin ang loob Mo
+      Em7           D/F#                A   
+    Iparinig ang nais Mo
+
+    Chorus1*** 
+    Chorus2: 
+            D               D/F#            G       A
+    Di nagbabago, Diyos ka sa amin
+            D            D/F#        G           A
+    Tanging sandigan, nariyan para samin
+      Bm7             A          G       D/F#
+    Panginoong Hesus, maghari Ka
+          Em7           D/F#    A
+    Magliwanag ka sa buhay ko
+
+    Interlude:   	
+    G   A   Bm7   D/F#
+    Em7   D/F#   G   A
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

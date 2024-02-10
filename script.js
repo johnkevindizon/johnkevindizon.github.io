@@ -182,3 +182,4 @@ initializeSublinkDropdown("setlist-sublink-toggleS101", "sublink-contentS101");
 initializeSublinkDropdown("setlist-sublink-toggleS102", "sublink-contentS102");
 initializeSublinkDropdown("setlist-sublink-toggleS103", "sublink-contentS103");
 initializeSublinkDropdown("setlist-sublink-toggleS104", "sublink-contentS104");
+initializeSublinkDropdown("setlist-sublink-toggleS106", "sublink-contentS106");
