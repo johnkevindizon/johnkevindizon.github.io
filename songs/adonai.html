@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Adonai</h1>
+  <h2>Hillsong</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="B">
+    Adlib: 
+    G#   B   E   C#
+    Intro:    
+    B   D#   E   F# 
+
+    Verse:
+    B                                                             
+    I lift my voice
+    E
+    I lift my praise to You
+    B
+    I lift my hands
+    E                            F#
+    I lift my worship to You
+
+    Pre - Chorus:        
+          G#                 F                          E        F#
+    And I love You more than I can say
+          G#                 F                          E        E
+    Oh I love You more than I can say
+
+    Chorus:
+            B         D#            E                         F#                   
+    Ever I will sing only You will I adore
+            B              C#        E                        F#
+    Glorify my Lord only You will I serve
+                      G#           A#  B  E     F#
+    For the world will fade away
+                      G#           A#  B  E     F#
+    Still my song to You remains
+    Only You will I adore
+
+    Bridge:
+          D#       E            F#  G#
+    Oh I love You always
+          D#       E            F#  G#
+    Oh I love You always
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

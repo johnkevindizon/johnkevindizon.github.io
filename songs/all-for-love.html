@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>All for Love</h1>
+  <h2>Hillsong</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="F">
+    Capo 2ND 
+    Intro:  	
+    F   G/B   C   C
+
+    Verse1:
+    F          G/B             C   C
+    All for love a Father gave
+    F          G/B                       C   C
+    For only love could make a way
+    F          G/B                        Am7
+    All for love the heavens cried
+    F          G                 C   C
+    For love was crucified
+
+    Pre - Chorus:        
+                              G/B                                       Am7
+    Oh how many times have I broken Your heart
+                            F                         C
+    But still You forgive, If only I ask
+                              G/B                                       Am7
+    And how many times have You heard me pray
+              F                   F
+    Draw near to me
+
+    Chorus:
+    G                    D/F#    Em7
+    Everything I need is You
+                                        C
+    My beginning, my forever
+    G                    D/F#    Em7      C
+    Everything I need is You
+
+    Verse2:
+    F          G/B             C   C
+    Let me sing all for love
+    F         G/B                     C   C
+    I will join the angel song
+    F          G/B               Am7
+    Ever holy is the Lord
+    F           G                 C   C
+    King of Glory, King of all
+
+    Pre – Chorus***
+    Chorus2x***
+
+    Bridge:
+    Em7   Em7   C   C
+
+    Verse3:
+    C             D                      G   G
+    All for a love a Saviour prayed
+    C             D                      G   G
+    Abba Father have Your way
+    C                     D                            Em7
+    Though they know not what they do
+    C            D                              Em
+    Let the Cross draw man to You
+
+    Chorus2x***
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
