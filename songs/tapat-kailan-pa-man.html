@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Tapat Kailan Pa Man</h1>
+  <h2>Ptr. Luis Baldomaro</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="B">
+    Intro:  	
+    Em7
+    A   F#m7  Bm7   E
+    Verse:
+    A                             F#m
+    Lagi Kang pasasalamatan
+    A                             F#m
+    Sa lahat ng 'Yong kabutihan
+              D                  C#m7 
+    Pupurihin Kita sasayawan Kita
+              D                       A         A7
+    Sa presensya Mo ako'y magsasaya
+            Dmaj7                 C#m7 
+    Sa puso ko wala na ngang iba
+            Bm7
+    Oh Diyos
+                  E
+    Oh Diyos
+
+    Chorus:
+                D               
+    Pagkat lagi kong nararanasan
+    C#m7              F#m7
+    Ang pagibig Mong
+                  Bm7           E 
+    Hindi kayang tumbasan
+                  A                    A7
+    Ng kahit na sino pa man
+
+          D               
+    Wala na ngang hihigit pa
+              C#m7              F#m7
+    Sa iyong pagmamahal
+                      Bm7          
+    Oh Ama, pagkat
+                      E                              A   F#m7  Bm7   E
+    Ikaw ang Diyos na tapat kailan pa man
+
+    Verse***
+    Chorus2x***
+    Adlib: 
+    A   F#m7  Bm7   E
+    Chorus2x***
+    Outro:   
+                      E                              A   F#m7  Bm7   E
+    Ikaw ang Diyos na tapat kailan pa man
+                      E                              A   F#m7  Bm7   E
+    Ikaw ang Diyos na tapat kailan pa man
+    F             
+    kailan pa man
+    A             
+    kailan pa man
+    F             
+    kailan pa man
+    A             
+    kailan pa man
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

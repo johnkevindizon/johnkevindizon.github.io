@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Salamat Panginoon</h1>
+  <h2>Paul Armesin</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="B">
+    Intro:   
+    C   Dm7  Em7  F
+    Verse:
+    C                  Dm7        Em7
+    Ikaw ay mabuti bawat sandal
+        Am7           D/F#         G
+    Sa habang buhay ay mananatili
+    C                  Dm7         Em7
+    Hindi mapapawi o maikukubli
+        Am7         D/F#         G
+    Maging sa dilim ng gabi
+
+    C                       Dm7         Em7
+    Sandigang matibay ang 'yong pangako
+    Am7            D/F#          G
+    Lakas at pag-asa ng aking puso
+    C                  Dm7         Em7
+    Hindi na mabilang pagkakataon
+    Am7            D/F#          G
+    Patunay ng katapatan mo
+
+    Chorus:
+                  C           Cmaj7    C
+    Sa dalamhati at sa kabiguan
+                  F/A         G/B          C
+    Sa pagluha ng pusong nasugatan
+      E7          Am      D/F#          F       C/E   
+    Sa pagsubok na iyong pinahihintulutan
+        Dm     C/E        Bb  
+    Salamat Panginoon
+    G           C              Cmaj7      C
+    Sa katugunan sa aking dalangin 
+                F/A         G/B              C
+    Sa kalakasang sa 'yo nanggagaling
+    E7          Am        D/F#          F       C/E  
+    Sa pagtuturo at pagtutuwid mo sa 'kin
+        Dm     C/E          G
+    Salamat Panginoon
+    C   Dm7   F   A     Dm7   G   C
+    Salamat
+
+    Bridge:   
+    F                                        C/E
+    Ikaw ay mabuti Ikaw ay tapat
+                        Dm7      C               Bb    G
+    Sa'yo ang papuri at pasasalamat
+    F                                        C/E
+    Ikaw ay mabuti Ikaw ay tapat
+                        Dm7      C               Bb    G
+    Sa'yo ang papuri at pasasalamat
+
+    Chorus***
+
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
