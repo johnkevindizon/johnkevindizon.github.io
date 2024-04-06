@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>We Want To See Jesus Lifted High</h1>
+  <h2>Oasis Worship</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="G">
+    Intro:    
+    G   D   Em    C
+
+    Verse:
+    G                          D                  Em                  
+    We want to see Jesus lifted high
+                            C 
+    A banner that flies across this land
+    G                                D                             Em                  
+    That all men might see the truth and know
+                      C 
+    He is the way to heaven
+
+    Chorus:
+    G                           D
+    We want to see, we want to see,
+    Em                      C   G/B  Am7  D  G
+    We want to see Jesus lifted High
+
+
+    Bridge:
+    G            D                               Em                  
+    Step by step we're moving forward
+                    D                              Em
+    Little by little we're taking ground
+                D                              Em
+    Every prayer a powerful weapon
+                          C                          D
+    Strongholds come tumbling down,
+    And down, and down, and down
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

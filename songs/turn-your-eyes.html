@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Turn Your Eyes</h1>
+  <h2>Sovereign Grace Music</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="G">
+    Capo 4TH 
+    Intro:  	
+    G   Bm7   Em7   C
+
+    Verse1:
+    G                Bm7           Em7 
+    Turn your eyes upon Jesus
+            C                                   D
+    Look full in His wonderful face
+    G                             Bm7                     C               Am7
+    And the things of earth will grow strangely dim
+                G                 D               G
+    In the light of His glory and grace
+
+    Intro***  	
+
+    Verse2:
+    G                Bm7           Em7 
+    Turn your eyes to the hillside
+            C                                   D
+    Where justice and mercy embraced
+    G                           Bm7                 C            Am7
+    There the Son of God gave His life for us
+                    G                    D               G
+    And our measureless debt was erased
+
+    Chorus:
+    C                                         G
+    Jesus, to You we lift our eyes
+    C                                         Em7     D
+    Jesus, our glory and our prize
+            C                        D                       Em7           Bm7
+    We adore You, behold You, our Savior ever true
+            C             D                           G         
+    Oh Jesus, we turn our eyes to You
+
+    Intro***  
+
+    Verse3:
+    G                Bm7           Em7 
+    Turn your eyes to the morning
+            C                                   D
+    And see Christ the Lion awake
+    G                           Bm7                 Em            C
+    What a glorious dawn, fear of death is gone
+                G/D         D                G
+    For we carry His life in our veins
+
+    Chorus***
+
+    Interlude:    
+    G   Gsus
+
+    Verse4:
+    G
+    Turn your eyes to the heavens
+            C/G                                   D/G
+    Our King will return for His own
+    G                 Am7 Bm7           Em        D     C
+    Every knee will bow, every tongue will shout,
+          D                          G
+    ‘All glory to Jesus alone!’
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
