@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Natagpuan</h1>
+  <h2>Hope Filipino Worship</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="D">
+    Intro:  D  D/F#  G  G
+                D  D/F#  G  G
+
+    Verse1:
+            D  		D/F#               G
+    Ang tinig Mo ay aking hanap-hanap
+            Em                  A/C#                 D 
+    Sa gitna ng bawat takot at paghihirap
+                D        D/F#            G
+    Sa kabila ng aking pagkukulang
+            Em                                             A 
+    Katapatan Mo O Diyos tanging laan
+        G                   A           D           D/C# Bm7 A
+    Sa puso at damdamin, Ika'y mananatili
+          Em      			         A
+    Walang hanggan ang alay Mong pag-ibig
+
+    Chorus:(
+              D/F#	                                 G
+    Natagpuan ng Iyong pag-ibig na dakila
+                  D/F#	                          G
+    Doon sa krus, ako'y Iyong pinalaya
+    G/B	           A/C#
+    Hesus, ako'y aaawit ng
+          D                                   G
+    Walang hanggang pagpupuri
+            Em                     A          D  D/F#  G  G(2X)
+    Ang puso ko'y Sa'yo iaalay
+
+    Verse2:
+        D  	       D/F#              G
+    Panginoon, Ikaw ang kaagapay
+            Em              A/C#                 D
+    Kabutihan Mo saki'y di nagkukulang
+          D            D/F#                      G
+    Panginoon, Ikaw lang ang kailangan
+                Em                                             A
+    Magpakailanman Sa'yo ako'y mananahan
+        G                   A           D           D/C# Bm7 A
+    Sa puso at damdamin, Ika'y mananatili
+          Em      			         A
+    Walang hanggan ang alay Mong pag-ibig
+    Instrumental:
+    Em7  A/C#  D  Bm7
+    Bridge:
+          Em7     A/C#                 D               Bm7
+    Hangad ko lang ay mamalagi sa Presensya Mo
+        Em7     A/C#      D                       Bm7
+    Natagpuan, Ako'y binago ng pag-ibig Mo
+        Em7        A/C#               D               Bm7
+    Hangad ko lang ay mamalagi sa presensya Mo
+        Em7            A                    D       
+    Luwalhatiin ang Pangalan Mo
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
