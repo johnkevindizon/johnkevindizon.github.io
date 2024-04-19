@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>At the Cross</h1>
+  <h2>Hillsong</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="C">
+    Intro:  C    G/B    C    D 
+
+    Verse1:
+    G/B  C                 D              Em
+    Oh Lord You've searched me
+    G/B  C                 D             D
+    You know my way
+    G/B  C                 D              Em
+    Even when I fail You
+    C                 D              D
+    I know You love me
+    G/B  C                 D              Em
+    Your holy presence
+    G/B  C                 D             D
+    Surrounding me
+    G/B  C                 D              Em
+    In every season
+    C                 D              D
+    I know You love me
+    C                 D              D
+    I know You love me
+
+    Chorus:
+    G                      D/F#      Em
+    At the cross I bow my knee
+    Em                                     D             C
+    Where Your blood was shed for me
+    C                                        D            
+    There's no greater love than this
+    G                      D/F#      Em
+    You have overcome the grave
+    Em                                     D             C
+    Your glory fills the highest place
+    C                                        D            
+    What can separate me now
+
+    Verse2:
+    G/B  C      D      Em
+    You go before me
+    G/B  C               D     D
+    You shield my way
+    G/B  C              D       Em
+    Your hand upholds me
+    G/B  C          D     D
+    I know You love me
+
+    Bridge:
+                            C
+    You tore the veil
+    D	        Em	         
+    You made a way
+                        C              Em         D
+    When You said that it is done
+
+
+
+    Verse3:
+    G/B  C                 D              Em
+    And when the earth fades
+    G/B  C                 D             D
+    Falls from my eyes
+    G/B  C                 D              Em
+    And You stand before me
+    C                 D              D
+    I know You love me
+    C                 D              D
+    I know You love me
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

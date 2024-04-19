@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Mighty to Save</h1>
+  <h2>Hillsong</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="D">
+    Intro:  D   A   F#m7   E 
+
+    Verse1:
+    D                                   A
+    Everyone needs compassion
+                                      F#m7
+    A love that's never failing
+          E                      D
+    Let mercy fall on me
+                                        A 
+    Everyone needs forgiveness
+                                    F#m7
+    The kindness of a Savior
+            E                         D   E   D/F#   E/G#                       
+    The hope of nations
+
+    Chorus:
+    A                                            E
+    Saviour, he can move the mountains
+                      D                A
+    My God is mighty to save
+              F#m7         E
+    He is mighty to save
+        A                              E
+    Forever Author of Salvation
+                          D                         A
+    He rose and conquered the grave
+              F#m7                 E
+    Jesus conquered the grave
+
+    Intro*** 
+    Verse1:
+    D                              A
+    So take me as you find me
+                                F#m7
+    All my fears and failures
+    E                              D
+    Fill my life again
+                                  A
+    I give my life to follow
+                                    F#m7
+    Everything that I believe in
+            E                         D   E   D/F#   E/G#                       
+    Now I surrender
+    Instrumental: 
+    D   A    E   F#m7
+
+    Bridge:
+    D                                  A                      E                                 
+    Shine your light and let the whole world see
+    F#m7               D              A                   E               F#m7            
+    We're singing for the glory of the risen king Jesus
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
