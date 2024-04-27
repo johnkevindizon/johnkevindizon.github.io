@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Tanging Pagmamahal</h1>
+  <h2>Faith Music Manila</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="E">
+    Intro:  
+    E
+
+    Verse1:
+    E                                                            C#m
+    Walang ibang nagmahal sa akin ng tulad mo
+    F#m7                                        B       
+    Pagibig mo'y wagas at di nagbabago
+    E                                       C#m
+    Pinatunayan mo ito sa krus ng kalbaryo
+    F#m7              B                    E      E
+    Kaligtasan sa'yo ay natamo
+
+    Verse2:
+    E                                                      C#m
+    Dahil sayong tanging pagmamahal
+    F#m7                                B       
+    Ako ay natubos sa kasalanan
+    E                                 C#m
+    Sasambahin kita at pupurihin ka
+    F#m7              B                    E      E7
+    Bilang tanda ng aking pagmamahal
+
+    Chorus:
+    A           B/A    G#m7           C#m7     
+    Ikaw ang hari at tagapagligtas 
+    F#m7                        B        E           E7
+    Banal mong Pangalan  aking itataas
+    A           B/A            G#m7    C#m7     
+    Panginoong Hesus aking Diyos
+    F#m7      B        E           E
+    Iaalay sayo aking lakas.
+
+    Verse1***
+    Verse2***
+    Chorus2x***
+
+    Adlib:    
+    A    B/A    G#m7   C#m7     
+    F#m7   B   E    E7
+
+    Chorus2x***
+
+    Outro:    
+    F#m7      B        E           E
+    Iaalay sayo aking lakas
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

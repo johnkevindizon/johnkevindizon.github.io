@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Magpakailanman / Malaya</h1>
+  <h2>Sanctuary of Worship</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="E">
+    Intro:    
+    E   B   C#m   A
+    E   C#m   D   B
+
+    Verse:
+    E                   B  
+    Pagpupuri't pagsamba
+          C#m                  A
+    Tanging sa'Yo lamang
+    E                        C#m
+    Diyos na makapangyarihan
+    D                    B
+    Magpakailanman	
+
+    E                     B  
+    Ang pag ibig Mo'y sapat     
+    C#m                A  
+    Sa Kanino man
+    E                        C#m
+    Pagkat 'di Ka nagbabago
+    D          B        E
+    Magpakailanman
+
+    Chorus1:
+    A                                 B
+    Ika'y aking sasambahin
+                  G#m            C#m
+    Ngalan Mo'y sasambitin
+      F#m                    B
+    'Pagkat pag-ibig Mo 
+                              E    F#m     G#m
+    Ang siyang mahalaga sa'kin
+
+    A                                 B
+    Sa gitna ng kalungkutan
+    G#m            C#m
+    Ika'y papupurihan
+    F#m           B
+    Pasasalamatan  
+        E   B   C#m   D
+    Magpakailanman
+
+    Verse2:
+    E                                                              D  B
+    Malaya malayang malayang malaya
+    E                                                              D  B
+    Malaya malayang malayang malaya
+    E                                                              B
+    Malaya malayang malayang malaya
+
+    Chorus2:
+
+    A                                 B
+    Ang Diyos sa buhay koy gumawa 
+            G#m                           C#m
+    Nakaranas  ng Kanyang mga himala 
+      F#m                                    B                  E    F#m     G#m
+    Sa sakit at karamdaman akoy pinalaya 
+
+    A                                 B
+    Ang kasalanan at ang kalungkutan        
+    G#m                          C#m
+    ay pinawi Niya ng lubusan
+      F#m                                         B                  E     B
+    Kapangyarihan ni Hesus ay aking nararanasan
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
