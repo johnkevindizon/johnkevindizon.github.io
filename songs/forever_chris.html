@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Forever</h1>
+  <h2>Chris Tomlin</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="G">
+    Intro:  
+    G   C   Em7   D   G 
+
+    Verse1:
+    G                                                             
+    Give thanks to the Lord our God and King
+    His love endures forever
+    C
+    For He is good, He is above all things
+    His love endures forever
+    D                   C/E
+    Sing praise, sing praise
+    G
+    With a mighty hand and outstretched arm
+    His love endures forever
+    C
+    For the life that's been reborn
+    His love endures forever
+
+    D                   C/E
+    Sing praise, sing praise
+
+    Chorus:
+    G		                   
+    Forever God is faithful
+    Em7
+    Forever God is strong
+    D
+    Forever God is with us
+    C
+    Forever
+    Verse2:
+    G                     
+    From the rising to the setting sun
+    His love endures forever
+    C
+    And by the grace of God we will carry on
+    His love endures forever
+
+    D                   C/E
+    Sing praise, sing praise
+    Chorus2x***
+
+    Interlude:    
+    G   C   Em7   D   G
+
+    D                   C/E
+    Sing praise, sing praise
+
+    Chorus2x***
+
+    Outro:    
+    G   C   Em7   D   G
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
