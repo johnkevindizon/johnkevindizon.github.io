@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Banal Mo`ng Tahanan</h1>
+  <h2>His Life</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="D">
+    Intro:  	
+    D   D/F#   G   G  
+
+    Verse:
+    D                         D/F#       G   
+    Ang puso ko'y dinudulog sayo
+    Em7                                          A   
+    Nagpapakumbaba, nagsusumamo
+    D/F#     G           A/G   
+    pagindapatin Mong
+    D/F#                  Bm7   
+    Ikaw ay mamasdan
+    Em7                                      A   
+    Makaniig ka at Sayo ay pumisan
+
+    Chorus:
+    D                                         D/F#       
+    Loobin mong ang buhay ko'y
+                        G                D/F#   
+    Maging banal Mong tahanan
+                    Em7                                       A   
+    Luklukan ng Iyong wagas na pagsinta
+                  D/F#                    D/F#  
+    Daluyan ng walang hanggang
+                G                      D/F#
+    Mga Papuri't pagsamba
+                    Em7                   A
+    Maghari ka, O Diyos ngayon
+                    D
+    At kailanman
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
