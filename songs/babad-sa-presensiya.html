@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Babad Sa Presensiya Mo</h1>
+  <h2>Musikatha</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="G">
+    Intro:    
+    G   Bm7   C   C   D 
+    G   Bm7   C   D 
+
+    Verse:
+              G 	 Bm7                  C                 D
+    Kay sarap sarap pa rin Sa’yo oh Panginoon
+    G 	         Bm7            C                 D
+    Ang mga pagpapala Mo’y lubos lubos
+
+    Pre-Chorus:
+            C 	                     Bm7           C                 Bm7    Em
+    Minsan ang ating kaaway pilit na tinatangay ang damdamin
+    C                 Bm7    Em    Asus4              A            D
+    At sa ating pagpupuri ako’y lubos na nagtagumpay
+
+    Chorus:
+                  G 	   Bm7                  
+    Ang kailangan lang ay babad sa presensiya Mo
+    C                 D
+    Babad sa Iyong salita
+    G 	        Bm7        C                         D
+    Babad ang sikreto ko kung bakit ako Masaya
+                  G 	   Bm7          
+    Ang kailangan lang ay babad sa presensiya Mo
+    C                 D
+    Babad sa Iyong salita
+    G 	        Bm7        C          D             G
+    Tulad ng isang usa na laging uhaw Sa’yo
+
+    Turn:  
+    G   Bm7   C   D
+
+    Verse***
+    Pre-Chorus***
+    Chorus***
+    Turn*** 
+    Pre-Chorus***
+    Chorus***
+
+
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

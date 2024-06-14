@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Lilim</h1>
+  <h2>Victory Worship</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="G">
+    Intro:
+    G   Bm7   C   Em   D 
+    Verse:
+    G              Bm7            C
+    Panginoon, ang nais ko
+                Em            D          
+    Kagandahan mo ay pagmasdan
+    G 	         Bm7            C
+    Ang pag-ibig mo, saki'y tugon
+                Em            D          Am7
+    Kailanma'y 'di pababayaan
+
+    Pre-Chorus:
+    Am7    G/B    C 
+    Sa'yo lamang matatagpuan
+    Am7   G/B   C    D
+    Sa'yo lamang
+
+    Chorus:
+    G                        Bm7
+    Mananatili sa iyong lilim
+        C                         Em              D
+    At sasambahin ka sa dakong lihim
+    G                        Bm7
+    Mananatili sa iyong lilim
+              C                               Em              D
+    Nang masumpungan ka sa dakong lihim
+
+    Turn:  
+    G   Em   G   Em   D
+
+    Verse:
+    G              Bm7            C
+    Panginoon, ang 'ngalan mo
+                Em            D          
+    Ay kalinga at sandigan ko
+    G 	         Bm7            C
+    'Di nagbabago, pangako mo
+              Em            D          Am7
+    Salita mo'y panghahawakan
+
+    Pre-Chorus***
+    Chorus***
+
+    Adlib: 
+    C   D   Em   G 
+
+    Bridge:
+    C	        D                           Em
+    Ang pagpuri ko ay tanging sa'yo
+                  G
+    Sa'yo lamang iniaalay
+    C	        D                           Em
+    O, Panginoon ang puso ko'y
+                  G
+    Sa'yo magpakailanman
+
+    Chorus***
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
