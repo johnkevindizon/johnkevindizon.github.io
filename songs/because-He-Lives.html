@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Because He Lives</h1>
+  <h2>Soew Rose</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="G">
+    Intro:    
+    Am7   D   G  
+
+    Verse1:
+                            G                                  C         Am7
+    God sent His son, they called Him Jesus;
+                          G    Em7          Am7    D     
+    He came to love, heal and forgive;
+                          G                         C         Am7
+    He lived and died to buy my pardon,
+                      G                            D                            G
+    An empty grave is there to prove my Savior lives!
+
+    Chorus:
+        D/F#         G                            C 
+    Because He lives, I can face tomorrow,
+                          G    Em7            Am7   D     
+    Because He lives, all fear is gone;
+                          G  G7                     C    Am7
+    Because I know He holds the future,
+                      Dsus2    
+    And life is worth the living,
+    D                          G
+    Just because He lives!
+
+    Verse2:
+                              G                          C         Am7
+    How sweet to hold a newborn baby,
+                          G    Em7          Am7    D     
+    And feel the pride and joy he brings;
+                          G                      C         Am7
+    But greater still the calm assurance:
+                            G                        D                            G
+    This child can face uncertain days because He Lives!
+
+    Verse3:
+                            G                            C         Am7
+    And then one day, I'll cross the river,
+                          G    Em7          Am7    D    
+    I'll fight life's final war with pain;
+                          G                                C         Am7
+    And then, as death gives way to victory,
+                      G                       D                          G
+    I'll see the lights of glory and I'll know He lives!
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

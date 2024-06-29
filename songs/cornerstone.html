@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Cornerstone</h1>
+  <h2>Hillsong</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="C">
+    Intro:  
+    C   Am   F   G
+
+    Verse1:
+    C  
+    My hope is built on nothing less
+    F                                     G
+    Than Jesus blood and righteousness
+    Am                               G
+    I dare not trust the sweetest frame
+    F                  G               C
+    But wholly trust in Jesus name
+
+    Verse1***
+
+    Chorus:
+                  F        Am       G
+    Christ alone, Cornerstone
+    C/E                  F                    Am           G
+    Weak made strong in the Saviour's love
+    C/E                  F         Am     G
+    Through the storm, He is Lord
+    G           C 
+    Lord of all
+
+    Intro***  
+
+    Verse2:
+    C  
+    When darkness seems to hide His face
+    F                          G
+    I rest on His unchanging grace
+    Am                         G
+    In every high and stormy gale
+    F                  G                    C
+    My anchor holds within the veil
+    F                  G                    C
+    My anchor holds within the veil
+
+    Chorus 2x***
+
+    Verse3:
+    C  
+    When He shall come with trumpet sound
+    F                             G
+    Oh may I then in Him be found
+    Am                                    G
+    Dressed in His righteousness alone
+    F                G                    C
+    Faultless stand before the throne
+
+    Chorus 2x***
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
