@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>Because of Your Love</h1>
+  <h2>Paul Baloche</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="G">
+    Intro:    
+    G/B   C   D   G 
+
+    Verse:
+                G/B         C            D     G                                                             
+    As we come in- to Your Presence
+                G/B         C            D     G                                                             
+    we remember every blessing
+                          G/B         C            D     G/B       C                                                            
+    That You've poured out so freely from above
+              G/B         C            D     G                                                             
+    Lifting gratitude and praises
+              G/B         C            D     G                                                             
+    for compassion so amazing
+                          G/B         C            D               G/B              C                                                            
+    Lord, we've come to give You thanks for all You've done     
+
+    Chorus:
+                                G/B     C      D                                                               
+    Because of Your love, 
+                                G/B     C      D                                                    
+    we're forgiven                               
+                                G/B     C      D                                                               
+    Because of Your love                   
+                                G/B     C      D                                                               
+    our hearts are clean                  
+                                G/B     C      D                                                               
+    We lift You up                             
+                                G/B     C      D                                                               
+    with songs of freedom             
+          C#                 C           D          
+    For- ever we're changed because of Your love
+
+    Adlib2x:                    
+    Em   D/F#   G    C          
+    G/B   C   D    D               
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
