@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>`Tis So Sweet to Trust in Jesus</h1>
+  <h2>Casting Crowns</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="B">
+    Capo 5TH 
+    Intro:    
+    D   D/F#   G   G  
+
+    Verse1:
+    D         D/F#        G           D
+    'Tis so sweet to trust in Jesus
+    D          Bm7          G        A
+    Just to take Him at His word;
+    D         D/F#        G           D   
+    Just to rest upon His promise,
+    Bm       G                     A             D
+    Just to know, "Thus saith the Lord."
+
+    Chorus:
+    D        D/F#   G         A
+    Jesus, Jesus, how I trust Him!
+    Bm          D/F#              G             A
+    How I've proved Him o'er and o'er!
+    D        D/F#   G              D
+    Jesus, Jesus, precious Jesus!
+    D  D/F#  G       A                D
+    O for grace to trust Him more!
+
+    Intro***    
+
+    Verse2:
+    D         D/F#   G                D
+    I'm so glad I learned to trust Him,
+    D             Bm7     G          A
+    Precious Jesus, Savior, friend;
+    D        D/F#          G        D   
+    And I know that He is with me,
+    Bm         G           A             D
+    Will be with me to the end.
+
+    Chorus2x***
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>

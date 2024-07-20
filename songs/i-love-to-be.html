@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>I Love to be in Your Presence</h1>
+  <h2>Don Moen</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="B">
+    Capo 1ST 
+    Intro:  	
+    G   G   G   G 
+    Am7   G/B   C   D   D  
+
+    Chorus:
+      G                              C          
+    I love to be in Your presence
+                      G                         D          
+    With Your people singing praises
+      G                              C          
+    I love to stand and rejoice
+                      G                   D       G   
+    Lift my hands and raise my voice
+
+    Chorus***
+
+    Refrain:
+    C                  Bm7                                 
+    You set my feet to dancing
+    C                  Bm7                                 
+    You fill my heart with song
+    F                    C                   D            D                                 
+    You give me reason to rejoice, rejoice
+
+    Chorus***
+
+    Turn:
+    C           G   
+    Lift My Hands,
+    C           G   
+    Lift My Hands,
+    C           G   
+    Lift My Hands,
+            D              G   
+    And Raise My Voice
+
+    1 FRET HIGHER
+    Interlude:  	
+    G   C   G   D 
+
+    Refrain***
+    Chorus2x***
+
+
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
