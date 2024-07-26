@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jQuery Chord Transposer</title>
+  <link rel="stylesheet" type="text/css" href="transposer.css" />
+</head>
+<body style="margin: 30px">
+  <h1>My God is All I Need / My God is so Big</h1>
+  <h2>CityAlight</h2>
+  <div id="font-controls">
+    <p>Font Size:
+      <button id="increase-font">++</button>
+      <button id="decrease-font">--</button>
+    </p>
+  </div>
+  <p>Select key:</p>
+  <pre data-key="D">
+    Intro:  
+    D   G   D   A   D
+
+    Verse1:
+    D                           G                                
+    Dark, dark is the valley
+    D                                   A
+    Faint, the light at my feet
+    D                                G          
+    But whatever may face me
+    D                A        D
+    My God is all I need
+
+    Intro***  
+
+    Verse2:
+    D                                    G                                
+    Bright, bright are the treasures
+    D                            A
+    Life may offer to me
+    D                              G                                
+    But whatever the pleasure
+    D                A        D
+    My God is all I need
+
+
+    Chorus:
+    D                                                     
+    He is my strength when I cannot go on
+    A                                D                   
+    Peace when all my power is gone
+    G                                 D                            A
+    Hope, although the night is long and deep
+    D
+    He is my song for He has rescued me
+    A                          D
+    Joy now He has set me free
+    G                                  D       
+    Praise! Praise to my Father be
+    A                        D
+    My God is all I need
+
+    Intro***  
+
+    Verse3:
+    D                               G                                
+    Brief, brief are my days here
+    D                                    A
+    Soon my journey complete
+    D                           G
+    But I look to my Saviour
+                  D            A              D
+    Where God has met my need
+            G           A              D
+    Yes, He has met my need
+
+    Chorus***
+
+    Interlude(4x):  
+    D   G 
+
+    Bridge(2x):
+          D                                 
+    My God is so big, so strong and so mighty
+                  A
+    There's nothing my God cannot do
+          D
+    My God is so big, so strong and so mighty
+                  A
+    There's nothing my God cannot do
+
+            D
+    The mountains are His, the valleys are His
+                                                      A
+    The stars are His handiwork too
+          D                           Bm
+    My God is so big, so strong and so mighty
+                  A                                         D
+    There's nothing my God cannot do
+
+                  A                                         D
+    (There's nothing my God cannot do)
+
+    Chorus***
+
+    Outro:  
+    G                                  D       
+    Praise! Praise to my Father be
+    A                        D
+    My God is all I need
+
+    D   G    D    A
+    D   G    D    A   D
+
+    
+  </pre>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="transposer.js" defer></script>
+  <script type="text/javascript">
+    $(function() {
+    	$("pre").transpose();
+    });
+  </script>
+</body>
+</html>
